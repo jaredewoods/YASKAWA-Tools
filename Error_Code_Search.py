@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter import ttk
 import pandas as pd
 import re
+import pyarrow
 
 # Load the data
 file_path = 'KLA Error Codes.csv'  # Make sure to use the correct path
