@@ -1,6 +1,5 @@
 import tkinter as tk
 from tkinter import ttk
-# noinspection PyPep8Naming
 import tkinter.font as tkFont
 
 # Embedded alarm dictionary with the specified alarm and sub-codes
@@ -61,8 +60,7 @@ alarm_dict = {
             "Message": "COMMUNICATION ERROR (I/O MODULE)",
             "Location of Defect": "I/O MODULE",
             "Signal of Defect": "",
-            "Cause": "An error was detected in communications with an I/O module board (NIF30) when the control power "
-                     "turned ON",
+            "Cause": "An error was detected in communications with an I/O module board (NIF30) when the control power turned ON",
             "Potential Causes": [],
             "Sub-Code Description": ""
         }
@@ -271,8 +269,7 @@ alarm_dict = {
             "Message": "MODE CHANGE ERROR",
             "Location of Defect": "",
             "Signal of Defect": "",
-            "Cause": "An error occurred during startup sequence processing with the AXC01, and the system did not"
-                     "startup normally",
+            "Cause": "An error occurred during startup sequence processing with the AXC01, and the system did not startup normally",
             "Potential Causes": [],
             "Sub-Code Description": ""
         }
@@ -535,8 +532,7 @@ alarm_dict = {
             "Message": "SYSTEM ERROR (SYSTEM 1)",
             "Location of Defect": "SYSTEM 1",
             "Signal of Defect": "",
-            "Cause": "An error occurred during the system control check due to a software bugs or invalid NCP30 RAM"
-                     "data",
+            "Cause": "An error occurred during the system control check due to a software bugs or invalid NCP30 RAM data",
             "Potential Causes": [],
             "Sub-Code Description": "The sub code stands for the alarm factor"
         }
@@ -546,8 +542,7 @@ alarm_dict = {
             "Message": "SYSTEM ERROR (SYSTEM 2)",
             "Location of Defect": "SYSTEM 2",
             "Signal of Defect": "",
-            "Cause": "An error occurred during the system control check due to a software bugs or invalid NCP30 RAM"
-                     "data",
+            "Cause": "An error occurred during the system control check due to a software bugs or invalid NCP30 RAM data",
             "Potential Causes": [],
             "Sub-Code Description": "The subcode shows the software internal process"
         }
@@ -557,8 +552,7 @@ alarm_dict = {
             "Message": "SYSTEM ERROR (EVENT)",
             "Location of Defect": "EVENT",
             "Signal of Defect": "",
-            "Cause": "An error occurred during the system event data control check due to a software bugs or invalid"
-                     "NCP30 RAM data",
+            "Cause": "An error occurred during the system event data control check due to a software bugs or invalid NCP30 RAM data",
             "Potential Causes": [],
             "Sub-Code Description": "The sub code stands for the detected error code"
         }
@@ -664,8 +658,7 @@ alarm_dict = {
             "Message": "EXTERNAL WDT BROKEN (NIF30)",
             "Location of Defect": "NIF30",
             "Signal of Defect": "",
-            "Cause": "This alarm is caused by a failure of the external WDT (watch dog timer) circuit on the NIF30"
-                     "board",
+            "Cause": "This alarm is caused by a failure of the external WDT (watch dog timer) circuit on the NIF30 board",
             "Potential Causes": [],
             "Sub-Code Description": ""
         }
@@ -985,8 +978,7 @@ alarm_dict = {
             "Message": "AMPLIFIER TYPE MISMATCH",
             "Location of Defect": "",
             "Signal of Defect": "",
-            "Cause": "The type of the amplifier displayed in axis data is different from the type in the system"
-                     "configuration",
+            "Cause": "The type of the amplifier displayed in axis data is different from the type in the system configuration",
             "Potential Causes": [
                 "The type of the amplifier is not correct",
                 "The type of the amplifier is different from the type in the system configuration",
@@ -1001,8 +993,7 @@ alarm_dict = {
             "Message": "ENCODER TYPE MISMATCH",
             "Location of Defect": "",
             "Signal of Defect": "",
-            "Cause": "The type of the encoder displayed in the axis data is different form the type of the encoder "
-                     "set in the system configuration",
+            "Cause": "The type of the encoder displayed in the axis data is different form the type of the encoder set in the system configuration",
             "Potential Causes": [
                 "The type of the encoder is not correct",
                 "System configuration is not correct",
@@ -1093,8 +1084,7 @@ alarm_dict = {
             "Message": "DEFECTIVE SERIAL ENCODER",
             "Location of Defect": "",
             "Signal of Defect": "",
-            "Cause": "Encoder internal data error is detected in serial communication between the controller and the "
-                     "encoder",
+            "Cause": "Encoder internal data error is detected in serial communication between the controller and the encoder",
             "Potential Causes": [],
             "Sub-Code Description": "The sub code stands for the defective axis"
         }
@@ -1104,8 +1094,7 @@ alarm_dict = {
             "Message": "DEFECTIVE SERIAL ENCODER COMMAND",
             "Location of Defect": "",
             "Signal of Defect": "",
-            "Cause": "Encoder command execution error is detected in serial communication between the controller and "
-                     "the encoder",
+            "Cause": "Encoder command execution error is detected in serial communication between the controller and the encoder",
             "Potential Causes": [],
             "Sub-Code Description": "The sub code stands for the defective axis"
         }
@@ -1185,8 +1174,7 @@ alarm_dict = {
             "Message": "SERIAL ENC MULTITURN LIMIT ERR",
             "Location of Defect": "",
             "Signal of Defect": "",
-            "Cause": "The NXC100 checks the multiple rotation number of the encoder. This alarm occurs when the "
-                     "parameter of the multiple rotation number is not set to the appropriate value",
+            "Cause": "The NXC100 checks the multiple rotation number of the encoder. This alarm occurs when the parameter of the multiple rotation number is not set to the appropriate value",
             "Potential Causes": [],
             "Sub-Code Description": "The sub code stands for the defective axis"
         }
@@ -1366,8 +1354,7 @@ alarm_dict = {
             "Message": "MEMORY ERROR(CONDITION FILE)",
             "Location of Defect": "CONDITION FILE",
             "Signal of Defect": "",
-            "Cause": "The memory for the condition file is damaged. The sub code is a file number. in which checksum "
-                     "error happened",
+            "Cause": "The memory for the condition file is damaged. The sub code is a file number. in which checksum error happened",
             "Potential Causes": [],
             "Sub-Code Description": ""
         }
@@ -1377,8 +1364,7 @@ alarm_dict = {
             "Message": "OVERRUN (ROBOT AXIS)",
             "Location of Defect": "ROBOT AXIS",
             "Signal of Defect": "",
-            "Cause": "NXC100 received robot overrun signal. The signal is disabled at default, so the possible causes"
-                     "are wiring defects or board defects",
+            "Cause": "NXC100 received robot overrun signal. The signal is disabled at default, so the possible causes are wiring defects or board defects",
             "Potential Causes": [],
             "Sub-Code Description": ""
         }
@@ -1388,8 +1374,7 @@ alarm_dict = {
             "Message": "OVERRUN (EXTERNAL AXIS)",
             "Location of Defect": "EXTERNAL AXIS",
             "Signal of Defect": "",
-            "Cause": "NXC100 received external unit overrun signal. The signal is disabled at default,"
-                     "so the possible causes are wiring defects or board defects",
+            "Cause": "NXC100 received external unit overrun signal. The signal is disabled at default, so the possible causes are wiring defects or board defects",
             "Potential Causes": [],
             "Sub-Code Description": ""
         }
@@ -1399,8 +1384,7 @@ alarm_dict = {
             "Message": "SYSTEM DATA HAS BEEN CHANGED",
             "Location of Defect": "",
             "Signal of Defect": "",
-            "Cause": "This alarm occurs when a servo on command is executed without a power cycle after changing "
-                     "system parameters",
+            "Cause": "This alarm occurs when a servo on command is executed without a power cycle after changing system parameters",
             "Potential Causes": [],
             "Sub-Code Description": ""
         }
@@ -1420,8 +1404,7 @@ alarm_dict = {
             "Message": "SHOCK SENSOR ACTIVATION",
             "Location of Defect": "",
             "Signal of Defect": "",
-            "Cause": "NXC100 received the robot shock sensor signal. The signal is disabled at default, "
-                     "so the possible causes are wiring defects or board defects",
+            "Cause": "NXC100 received the robot shock sensor signal. The signal is disabled at default, so the possible causes are wiring defects or board defects",
             "Potential Causes": [],
             "Sub-Code Description": ""
         }
@@ -1431,8 +1414,7 @@ alarm_dict = {
             "Message": "BRAKE FUSE BREAKDOWN",
             "Location of Defect": "",
             "Signal of Defect": "",
-            "Cause": "This alarm occurs when the brake output relay fuse for NTU30 is broken. The possible causes are"
-                     "NTU30 board defects, or, less often, contact failure or noise",
+            "Cause": "This alarm occurs when the brake output relay fuse for NTU30 is broken. The possible causes are NTU30 board defects, or, less often, contact failure or noise",
             "Potential Causes": [],
             "Sub-Code Description": ""
         }
@@ -1568,8 +1550,7 @@ alarm_dict = {
         "000E": {
             "Message": "SYSTEM ERROR (JOB)",
             "Location of Defect": "JOB",
-            "Signal of Defect": "Invalid command exists in the job.\n(Software unmatch, or data unmatch by software "
-                                "update)",
+            "Signal of Defect": "Invalid command exists in the job.\n(Software unmatch, or data unmatch by software update)",
             "Cause": "The error occurs in the MOTION job access. (job edition, CF operation)",
             "Potential Causes": [],
             "Sub-Code Description": "The sub code stands for the alarm factor"
@@ -1609,8 +1590,7 @@ alarm_dict = {
         "0014": {
             "Message": "SYSTEM ERROR (JOB)",
             "Location of Defect": "JOB",
-            "Signal of Defect": "A job was newly created with the same name of the undefined job already specified in"
-                                "the memory",
+            "Signal of Defect": "A job was newly created with the same name of the undefined job already specified in the memory",
             "Cause": "The error occurs in the MOTION job access. (job edition, CF operation)",
             "Potential Causes": [],
             "Sub-Code Description": "The sub code stands for the alarm factor"
@@ -1734,8 +1714,7 @@ alarm_dict = {
         "000E": {
             "Message": "SYSTEM ERROR (JOB)",
             "Location of Defect": "JOB",
-            "Signal of Defect": "Invalid command exists in the job.\n(Software unmatch, or data unmatch by software"
-                                "update)",
+            "Signal of Defect": "Invalid command exists in the job.\n(Software unmatch, or data unmatch by software update)",
             "Cause": "The error occurs in the MOTION job access. (job edition, CF operation)",
             "Potential Causes": [],
             "Sub-Code Description": "The sub code stands for the alarm factor"
@@ -1775,8 +1754,7 @@ alarm_dict = {
         "0014": {
             "Message": "SYSTEM ERROR (JOB)",
             "Location of Defect": "JOB",
-            "Signal of Defect": "A job was newly created with the same name of the undefined job already specified in "
-                                "the memory",
+            "Signal of Defect": "A job was newly created with the same name of the undefined job already specified in the memory",
             "Cause": "The error occurs in the MOTION job access. (job edition, CF operation)",
             "Potential Causes": [],
             "Sub-Code Description": "The sub code stands for the alarm factor"
@@ -1812,8 +1790,7 @@ alarm_dict = {
         "0003": {
             "Message": "SYSTEM ERROR (POSITION DATA)",
             "Location of Defect": "POSITION DATA",
-            "Signal of Defect": "Keeping the position on the axes number 0 is unable. Uncompleted initialization ("
-                                "Defect)",
+            "Signal of Defect": "Keeping the position on the axes number 0 is unable. Uncompleted initialization (Defect)",
             "Cause": "The error occurs in the MOTION position data access. (During play-back / operating)",
             "Potential Causes": [],
             "Sub-Code Description": "Data stands for the alarm factor"
@@ -4827,7 +4804,7 @@ class AlarmAnalyzer:
 
         # Define fonts
         label_font = tkFont.Font(family="Arial", size=14)
-        entry_font = tkFont.Font(family="Arial", size=14)
+        entry_font = tkFont.Font(family="Courier New", size=14)
 
         # Initialize UI components
         self.initialize_ui(label_font, entry_font)
@@ -4845,9 +4822,7 @@ class AlarmAnalyzer:
 
         # Label and combobox for KLA Alarm
         ttk.Label(self.master, text="ALARM\n CODE", font=label_font, style="Grey.TLabel", anchor="center",
-                  width=10).grid(row=0, column=0, sticky="e",
-                                 padx=0,
-                                 pady=(20, 5))
+                  width=10).grid(row=0, column=0, sticky="e", padx=0, pady=(20, 5))
         self.alarm_combo = ttk.Combobox(self.master, font=entry_font, width=7, height=23)
         self.alarm_combo.grid(row=0, column=1, pady=(20, 5))
         self.alarm_combo['values'] = list(alarm_dict.keys())
@@ -4858,7 +4833,7 @@ class AlarmAnalyzer:
             row=0, column=2,
             pady=(20, 5))
         self.subcode_combo = ttk.Combobox(self.master, font=entry_font, width=9)
-        self.subcode_combo.grid(row=0, column=3, pady=(20, 5))
+        self.subcode_combo.grid(row=0, column=3, padx=(0, 10), pady=(20, 5))
         self.subcode_combo.bind('<<ComboboxSelected>>', self.display_info)
 
     def setup_fields(self, label_font, entry_font):
@@ -4867,33 +4842,31 @@ class AlarmAnalyzer:
                   foreground="grey").grid(row=2, column=0, padx=5,
                                           sticky='nsew')
         self.subcode_description_text = tk.Text(self.master, height=2, width=30, font=entry_font, wrap=tk.WORD)
-        self.subcode_description_text.grid(row=2, column=1, columnspan=3, sticky='EW')
+        self.subcode_description_text.grid(row=2, column=1, columnspan=3, padx=(0, 10), sticky='EW')
 
         # Location of Defect
         ttk.Label(self.master, text=" LOCATION\nOF DEFECT", font=label_font, anchor="center", foreground="grey").grid(
             row=3, column=0, padx=5, sticky='nsew')
         self.location_of_defect_text = tk.Text(self.master, height=2, width=30, font=entry_font, wrap=tk.WORD)
-        self.location_of_defect_text.grid(row=3, column=1, columnspan=3, sticky='EW')
+        self.location_of_defect_text.grid(row=3, column=1, columnspan=3, padx=(0, 10), sticky='EW')
 
         # Signal of Defect
         ttk.Label(self.master, text="   SIGNAL\nOF DEFECT", font=label_font, anchor="center", foreground="grey").grid(
             row=4, column=0, padx=5, sticky='nsew')
         self.signal_of_defect_text = tk.Text(self.master, height=2, width=30, font=entry_font, wrap=tk.WORD)
-        self.signal_of_defect_text.grid(row=4, column=1, columnspan=3, sticky='EW')
+        self.signal_of_defect_text.grid(row=4, column=1, columnspan=3, padx=(0, 10), sticky='EW')
 
         # Message
-        ttk.Label(self.master, text="MESSAGE", font=label_font, anchor="center", foreground="grey").grid(row=5,
-                                                                                                         column=0,
-                                                                                                         padx=5,
-                                                                                                         sticky='nsew')
+        ttk.Label(self.master, text="MESSAGE", font=label_font, anchor="center",
+                  foreground="grey").grid(row=5, column=0, padx=5, sticky='nsew')
         self.message_text = tk.Text(self.master, height=2, width=30, font=entry_font, wrap=tk.WORD)
-        self.message_text.grid(row=5, column=1, columnspan=3, sticky='EW')
+        self.message_text.grid(row=5, column=1, columnspan=3, padx=(0, 10), sticky='EW')
 
         # Possible Causes
         ttk.Label(self.master, text="POSSIBLE\n  CAUSES", font=label_font, anchor="center", foreground="grey").grid(
             row=6, column=0, padx=5, sticky='new')
         self.info_text = tk.Text(self.master, height=12, width=30, font=entry_font, wrap=tk.WORD)
-        self.info_text.grid(row=6, column=1, columnspan=3, sticky='EW')
+        self.info_text.grid(row=6, column=1, columnspan=3, padx=(0, 10), pady=(0, 10), sticky='EW')
 
     def update_subcodes(self, event):
         # Update sub-codes based on the selected alarm code
