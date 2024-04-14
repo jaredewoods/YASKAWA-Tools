@@ -4804,15 +4804,15 @@ class AlarmAnalyzer:
         style = ttk.Style()
         style.configure("Grey.TLabel", foreground="grey")
 
-        ttk.Label(self.master, text="KLA ALARM", font=label_font, style="Grey.TLabel", width=10).grid(row=0, column=0, padx=(5, 0), pady=20)
-        self.alarm_combo = ttk.Combobox(self.master, font=entry_font, width=6)
-        self.alarm_combo.grid(row=0, column=1, pady=20)
+        ttk.Label(self.master, text="KLA ALARM", font=label_font, style="Grey.TLabel", width=10).grid(row=0, column=0, padx=(5, 0), pady=(20, 5))
+        self.alarm_combo = ttk.Combobox(self.master, font=entry_font, width=6, height=23)
+        self.alarm_combo.grid(row=0, column=1, pady=(20, 5))
         self.alarm_combo['values'] = list(alarm_dict.keys())
         self.alarm_combo.bind('<<ComboboxSelected>>', self.update_subcodes)
 
-        ttk.Label(self.master, text="SUB-CODE", font=label_font, style="Grey.TLabel", width=10).grid(row=0, column=2, pady=20)
+        ttk.Label(self.master, text="SUB-CODE", font=label_font, style="Grey.TLabel", width=10).grid(row=0, column=2, pady=(20, 5))
         self.subcode_combo = ttk.Combobox(self.master, font=entry_font, width=9)
-        self.subcode_combo.grid(row=0, column=3, pady=20)
+        self.subcode_combo.grid(row=0, column=3, pady=(20, 5))
         self.subcode_combo.bind('<<ComboboxSelected>>', self.display_info)
 
     def setup_fields(self, label_font, entry_font):
