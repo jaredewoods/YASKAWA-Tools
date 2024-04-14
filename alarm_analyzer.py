@@ -4769,78 +4769,104 @@ error_dict = {
     }
 }
 
+
 class ErrorLookupApp:
     def __init__(self, master):
         self.master = master
         master.title("Error Code Lookup")
 
-        # Define font styles
-        labelFont = tkFont.Font(family="Helvetica", size=14, weight="bold")
-        textFont = tkFont.Font(family="Helvetica", size=14)
-        comboFont = tkFont.Font(family="Helvetica", size=14)  # Smaller than labels and text
+        # Define fonts
+        labelFont = tkFont.Font(family="Arial", size=16)
+        entryFont = tkFont.Font(family="Arial", size=14)
 
-        # Alarm Code ComboBox
-        self.alarm_label = ttk.Label(master, text="Alarm Code:", font=labelFont)
-        self.alarm_label.grid(row=0, column=0)
-        self.alarm_combo = ttk.Combobox(master, font=comboFont, width=10)
+        # Initialize UI components
+        self.initialize_ui(labelFont, entryFont)
+
+    def initialize_ui(self, labelFont, entryFont):
+        # Setup comboboxes for Alarm and Sub-Code
+        self.setup_comboboxes(labelFont, entryFont)
+
+        # Setup individual fields for Message, Location, Signal, and Cause
+        self.setup_fields(labelFont, entryFont)
+
+        # Setup text area for Potential Causes and Sub-Code Description
+        self.setup_info_text(entryFont)
+
+    def setup_comboboxes(self, labelFont, entryFont):
+        style = ttk.Style()
+        style.configure("Grey.TLabel", foreground="grey")
+
+        ttk.Label(self.master, text="ALARM", font=labelFont, style="Grey.TLabel", width=6).grid(row=0, column=0, padx=(5, 0), pady=20)
+        self.alarm_combo = ttk.Combobox(self.master, font=entryFont, width=6)
+        self.alarm_combo.grid(row=0, column=1, pady=20)
         self.alarm_combo['values'] = list(error_dict.keys())
-        self.alarm_combo.grid(row=0, column=1)
         self.alarm_combo.bind('<<ComboboxSelected>>', self.update_subcodes)
 
-        # Sub-Code ComboBox
-        self.subcode_label = ttk.Label(master, text="Sub-Code:", font=labelFont)
-        self.subcode_label.grid(row=1, column=0)
-        self.subcode_combo = ttk.Combobox(master, font=comboFont, width=10)
-        self.subcode_combo.grid(row=1, column=1)
+        ttk.Label(self.master, text="SUB-CODE", font=labelFont, style="Grey.TLabel", width=10).grid(row=0, column=2, pady=20)
+        self.subcode_combo = ttk.Combobox(self.master, font=entryFont, width=9)
+        self.subcode_combo.grid(row=0, column=3, pady=20)
+        self.subcode_combo.bind('<<ComboboxSelected>>', self.display_info)
 
-        # Display Area
-        self.info_text = tk.Text(master, font=textFont, height=15, width=60)
-        self.info_text.grid(row=2, column=0, columnspan=2)
+    def setup_fields(self, labelFont, entryFont):
+        style = ttk.Style()
+        style.configure("Grey.TLabel", foreground="grey")
 
+        ttk.Label(self.master, text="LOCATION", font=labelFont, style="Grey.TLabel").grid(row=2, column=0, padx=5)
+        self.location_of_defect_text = tk.Text(self.master, height=2, width=30, font=entryFont)
+        self.location_of_defect_text.grid(row=2, column=1, columnspan=3, sticky=tk.EW)
+
+        ttk.Label(self.master, text="SIGNAL", font=labelFont, style="Grey.TLabel").grid(row=3, column=0, padx=5)
+        self.signal_of_defect_text = tk.Text(self.master, height=2, width=30, font=entryFont)
+        self.signal_of_defect_text.grid(row=3, column=1, columnspan=3, sticky=tk.EW)
+
+        ttk.Label(self.master, text="MESSAGE", font=labelFont, style="Grey.TLabel").grid(row=4, column=0, padx=5)
+        self.message_text = tk.Text(self.master, height=2, width=30, font=entryFont)
+        self.message_text.grid(row=4, column=1, columnspan=3, sticky=tk.EW)
+
+        ttk.Label(self.master, text="CAUSE", font=labelFont, style="Grey.TLabel").grid(row=5, column=0, padx=5)
+        self.cause_text = tk.Text(self.master, height=5, width=30, font=entryFont)
+        self.cause_text.grid(row=5, column=1, columnspan=3, sticky=tk.EW)
+
+    def setup_info_text(self, entryFont):
+        self.info_text = tk.Text(self.master, font=entryFont, height=10, width=50)
+        self.info_text.grid(row=6, column=0, columnspan=4, sticky=tk.EW)
 
     def update_subcodes(self, event):
         alarm_code = self.alarm_combo.get()
         sub_codes = list(error_dict[alarm_code].keys())
         self.subcode_combo['values'] = sub_codes
-        if sub_codes:  # Check if there are any sub-codes available
-            self.subcode_combo.set(sub_codes[0])  # Automatically set to the first sub-code
-            self.display_info(None)  # Manually call display_info to update the display
+        if sub_codes:
+            self.subcode_combo.set(sub_codes[0])
+            self.display_info(None)
         else:
-            self.subcode_combo.set('')  # Clear sub-code combo box if no sub-codes
+            self.subcode_combo.set('')
             self.info_text.delete(1.0, tk.END)
 
     def display_info(self, event):
         sub_code = self.subcode_combo.get()
+        if not sub_code:
+            return
+
         details = error_dict[self.alarm_combo.get()][sub_code]
+        self.update_text_widget(self.message_text, details.get('Message', ''))
+        self.update_text_widget(self.location_of_defect_text, details.get('Location of Defect', ''))
+        self.update_text_widget(self.signal_of_defect_text, details.get('Signal of Defect', ''))
+        self.update_text_widget(self.cause_text, details.get('Cause', ''))
+
         self.info_text.delete(1.0, tk.END)
-
-        # Display Message with label always visible
-        message = details.get('Message', '')
-        self.info_text.insert(tk.END, f"Message: {message if message else ''}\n")
-
-        # Display Location with label always visible
-        location = details.get('Location', '')
-        self.info_text.insert(tk.END, f"Location of Defect: {location if location else ''}\n")
-
-        # Display Signal with label always visible
-        signal = details.get('Signal', '')
-        self.info_text.insert(tk.END, f"Signal of Defect: {signal if signal else ''}\n")
-
-        # Display Cause with label always visible
-        cause = details.get('Cause', '')
-        self.info_text.insert(tk.END, f"Cause: {cause if cause else ''}\n")
-
-        # Display Potential Causes as bullet points if any
         potential_causes = details.get('Potential Causes', [])
         if potential_causes:
-            self.info_text.insert(tk.END, "")  # Start on a new line
+            self.info_text.insert(tk.END, "")
             for cause in potential_causes:
                 self.info_text.insert(tk.END, f"• {cause}\n")
-
-        # Display Sub-Code Description directly without label if available
         sub_code_description = details.get('Sub-Code Description', '')
-        if sub_code_description:  # Simplified condition, checks if there's any content
+        if sub_code_description:
             self.info_text.insert(tk.END, f"\n{sub_code_description}\n")
+
+    def update_text_widget(self, widget, text):
+        widget.delete(1.0, tk.END)
+        widget.insert(tk.END, text)
+
 
 # Create the main window and pass it to the Application
 root = tk.Tk()
