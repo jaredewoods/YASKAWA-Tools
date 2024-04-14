@@ -34,10 +34,11 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
+    icon=['KLA-red_on_black.ico'],
 )
 app = BUNDLE(
     exe,
     name='alarm_analyzer.app',
-    icon=None,
+    icon='KLA-red_on_black.ico',
     bundle_identifier=None,
 )
