@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import ttk
 import tkinter.font as tkFont
-
+import pyinstaller
 # Embedded alarm dictionary with the specified alarm and sub-codes
 alarm_dict = {
     "0020": {
