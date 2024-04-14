@@ -606,9 +606,9 @@
             "Signal of Defect": "",
             "Cause": "An error occurred in the NCP30 due to:",
             "Potential Causes": [
-                " Defective board",
-                " Incorrect connection",
-                " software control error"
+                "Defective board",
+                "Incorrect connection",
+                "software control error"
             ],
             "Sub-Code Description": ""
         }
@@ -620,9 +620,9 @@
             "Signal of Defect": "",
             "Cause": "Communications and power supply error occurred in the NIF30 due to:",
             "Potential Causes": [
-                " Loose X33 connector",
-                " Invalid CIO parameter",
-                " Corrupt memory in the NCP30 "
+                "Loose X33 connector",
+                "Invalid CIO parameter",
+                "Corrupt memory in the NCP30 "
             ],
             "Sub-Code Description": ""
         }
@@ -1107,50 +1107,50 @@
         "0065": {
             "Message": "COMMUNICATION ERROR (CONVERTER)",
             "Location of Defect": "CONVERTER",
-            "Signal of Defect": " Communication status error",
+            "Signal of Defect": "Communication status error",
             "Cause": "Serial communication error between the AXC01 and the COBCB030GAA.",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "0066": {
             "Message": "COMMUNICATION ERROR (CONVERTER)",
             "Location of Defect": "CONVERTER",
-            "Signal of Defect": " Command timeout",
+            "Signal of Defect": "Command timeout",
             "Cause": "Serial communication error between the AXC01 and the COBCB030GAA.",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "0067": {
             "Message": "COMMUNICATION ERROR (CONVERTER)",
             "Location of Defect": "CONVERTER",
-            "Signal of Defect": " Transmission error",
+            "Signal of Defect": "Transmission error",
             "Cause": "Serial communication error between the AXC01 and the COBCB030GAA.",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "0068": {
             "Message": "COMMUNICATION ERROR (CONVERTER)",
             "Location of Defect": "CONVERTER",
-            "Signal of Defect": " Check sum error of received data",
+            "Signal of Defect": "Check sum error of received data",
             "Cause": "Serial communication error between the AXC01 and the COBCB030GAA.",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "0069": {
             "Message": "COMMUNICATION ERROR (CONVERTER)",
             "Location of Defect": "CONVERTER",
-            "Signal of Defect": " Error code reception",
+            "Signal of Defect": "Error code reception",
             "Cause": "Serial communication error between the AXC01 and the COBCB030GAA.",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "006A": {
             "Message": "COMMUNICATION ERROR (CONVERTER)",
             "Location of Defect": "CONVERTER",
-            "Signal of Defect": " Received command error ",
+            "Signal of Defect": "Received command error ",
             "Cause": "Serial communication error between the AXC01 and the COBCB030GAA.",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         }
     },
     "1352": {
@@ -1430,10 +1430,10 @@
             "Signal of Defect": "",
             "Cause": "The error occurs in the file data access (file edition, CF operation)",
             "Potential Causes": [
-                " Software bugs",
-                " Invalid NCP30 RAM memory"
+                "Software bugs",
+                "Invalid NCP30 RAM memory"
             ],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         }
     },
     "4201": {
@@ -1443,7 +1443,7 @@
             "Signal of Defect": "Parameter error ",
             "Cause": "The error occurs in the MOTION job access. (job edition, CF operation)",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "0002": {
             "Message": "SYSTEM ERROR (JOB)",
@@ -1451,7 +1451,7 @@
             "Signal of Defect": "Access time over ",
             "Cause": "The error occurs in the MOTION job access. (job edition, CF operation)",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "0003": {
             "Message": "SYSTEM ERROR (JOB)",
@@ -1459,7 +1459,7 @@
             "Signal of Defect": "Access error ",
             "Cause": "The error occurs in the MOTION job access. (job edition, CF operation)",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "0004": {
             "Message": "SYSTEM ERROR (JOB)",
@@ -1467,7 +1467,7 @@
             "Signal of Defect": "Job name error\nInvalid character is used for the job name.",
             "Cause": "The error occurs in the MOTION job access. (job edition, CF operation)",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "0005": {
             "Message": "SYSTEM ERROR (JOB)",
@@ -1475,7 +1475,7 @@
             "Signal of Defect": "Existing job open\nThe job name already exists in the memory at the new job creation.",
             "Cause": "The error occurs in the MOTION job access. (job edition, CF operation)",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "0006": {
             "Message": "SYSTEM ERROR (JOB)",
@@ -1483,7 +1483,7 @@
             "Signal of Defect": "The area (memory) of the registered job exceeds the available range.",
             "Cause": "The error occurs in the MOTION job access. (job edition, CF operation)",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "0007": {
             "Message": "SYSTEM ERROR (JOB)",
@@ -1491,7 +1491,7 @@
             "Signal of Defect": "The job which does not exist in the memory is selected for display.",
             "Cause": "The error occurs in the MOTION job access. (job edition, CF operation)",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "0008": {
             "Message": "SYSTEM ERROR (JOB)",
@@ -1499,7 +1499,7 @@
             "Signal of Defect": "The edit-lock job is specified for edition.",
             "Cause": "The error occurs in the MOTION job access. (job edition, CF operation)",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "0009": {
             "Message": "SYSTEM ERROR (JOB)",
@@ -1507,7 +1507,7 @@
             "Signal of Defect": "Handle value illegality ",
             "Cause": "The error occurs in the MOTION job access. (job edition, CF operation)",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "000A": {
             "Message": "SYSTEM ERROR (JOB)",
@@ -1515,7 +1515,7 @@
             "Signal of Defect": "System error ",
             "Cause": "The error occurs in the MOTION job access. (job edition, CF operation)",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "000B": {
             "Message": "SYSTEM ERROR (JOB)",
@@ -1523,7 +1523,7 @@
             "Signal of Defect": "Sequence number error ",
             "Cause": "The error occurs in the MOTION job access. (job edition, CF operation)",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "000C": {
             "Message": "SYSTEM ERROR (JOB)",
@@ -1531,7 +1531,7 @@
             "Signal of Defect": "Step number error ",
             "Cause": "The error occurs in the MOTION job access. (job edition, CF operation)",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "000D": {
             "Message": "SYSTEM ERROR (JOB)",
@@ -1539,7 +1539,7 @@
             "Signal of Defect": "The job specified for search does not exist in the memory. ",
             "Cause": "The error occurs in the MOTION job access. (job edition, CF operation)",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "000E": {
             "Message": "SYSTEM ERROR (JOB)",
@@ -1547,7 +1547,7 @@
             "Signal of Defect": "Invalid command exists in the job.\n(Software unmatch, or data unmatch by software update)",
             "Cause": "The error occurs in the MOTION job access. (job edition, CF operation)",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "0010": {
             "Message": "SYSTEM ERROR (JOB)",
@@ -1555,7 +1555,7 @@
             "Signal of Defect": "Opened handle shortage ",
             "Cause": "The error occurs in the MOTION job access. (job edition, CF operation)",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "0011": {
             "Message": "SYSTEM ERROR (JOB)",
@@ -1563,7 +1563,7 @@
             "Signal of Defect": "Write impossibility by multi open ",
             "Cause": "The error occurs in the MOTION job access. (job edition, CF operation)",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "0012": {
             "Message": "SYSTEM ERROR (JOB)",
@@ -1571,7 +1571,7 @@
             "Signal of Defect": "The command number exceeds 9999 at the command insertion to the job. ",
             "Cause": "The error occurs in the MOTION job access. (job edition, CF operation)",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "0013": {
             "Message": "SYSTEM ERROR (JOB)",
@@ -1579,7 +1579,7 @@
             "Signal of Defect": "The step number exceeds 999 at the step insertion to the job. ",
             "Cause": "The error occurs in the MOTION job access. (job edition, CF operation)",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "0014": {
             "Message": "SYSTEM ERROR (JOB)",
@@ -1587,7 +1587,7 @@
             "Signal of Defect": "A job was newly created with the same name of the undefined job already specified in the memory. ",
             "Cause": "The error occurs in the MOTION job access. (job edition, CF operation)",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "0063": {
             "Message": "SYSTEM ERROR (JOB)",
@@ -1597,7 +1597,7 @@
             "Potential Causes": [
                 "Software bugs or invalid NCP30 RAM memory."
             ],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         }
     },
     "4202": {
@@ -1607,7 +1607,7 @@
             "Signal of Defect": "Parameter error ",
             "Cause": "The error occurs in the MOTION job access. (job edition, CF operation)",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "0002": {
             "Message": "SYSTEM ERROR (JOB)",
@@ -1615,7 +1615,7 @@
             "Signal of Defect": "Access time over ",
             "Cause": "The error occurs in the MOTION job access. (job edition, CF operation)",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "0003": {
             "Message": "SYSTEM ERROR (JOB)",
@@ -1623,7 +1623,7 @@
             "Signal of Defect": "Access error ",
             "Cause": "The error occurs in the MOTION job access. (job edition, CF operation)",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "0004": {
             "Message": "SYSTEM ERROR (JOB)",
@@ -1631,7 +1631,7 @@
             "Signal of Defect": "Job name error\nInvalid character is used for the job name.",
             "Cause": "The error occurs in the MOTION job access. (job edition, CF operation)",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "0005": {
             "Message": "SYSTEM ERROR (JOB)",
@@ -1639,7 +1639,7 @@
             "Signal of Defect": "Existing job open\nThe job name already exists in the memory at the new job creation.",
             "Cause": "The error occurs in the MOTION job access. (job edition, CF operation)",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "0006": {
             "Message": "SYSTEM ERROR (JOB)",
@@ -1647,7 +1647,7 @@
             "Signal of Defect": "The area (memory) of the registered job exceeds the available range.",
             "Cause": "The error occurs in the MOTION job access. (job edition, CF operation)",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "0007": {
             "Message": "SYSTEM ERROR (JOB)",
@@ -1655,7 +1655,7 @@
             "Signal of Defect": "The job which does not exist in the memory is selected for display.",
             "Cause": "The error occurs in the MOTION job access. (job edition, CF operation)",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "0008": {
             "Message": "SYSTEM ERROR (JOB)",
@@ -1663,7 +1663,7 @@
             "Signal of Defect": "The edit-lock job is specified for edition.",
             "Cause": "The error occurs in the MOTION job access. (job edition, CF operation)",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "0009": {
             "Message": "SYSTEM ERROR (JOB)",
@@ -1671,7 +1671,7 @@
             "Signal of Defect": "Handle value illegality ",
             "Cause": "The error occurs in the MOTION job access. (job edition, CF operation)",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "000A": {
             "Message": "SYSTEM ERROR (JOB)",
@@ -1679,7 +1679,7 @@
             "Signal of Defect": "System error ",
             "Cause": "The error occurs in the MOTION job access. (job edition, CF operation)",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "000B": {
             "Message": "SYSTEM ERROR (JOB)",
@@ -1687,7 +1687,7 @@
             "Signal of Defect": "Sequence number error ",
             "Cause": "The error occurs in the MOTION job access. (job edition, CF operation)",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "000C": {
             "Message": "SYSTEM ERROR (JOB)",
@@ -1695,7 +1695,7 @@
             "Signal of Defect": "Step number error ",
             "Cause": "The error occurs in the MOTION job access. (job edition, CF operation)",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "000D": {
             "Message": "SYSTEM ERROR (JOB)",
@@ -1703,7 +1703,7 @@
             "Signal of Defect": "The job specified for search does not exist in the memory. ",
             "Cause": "The error occurs in the MOTION job access. (job edition, CF operation)",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "000E": {
             "Message": "SYSTEM ERROR (JOB)",
@@ -1711,7 +1711,7 @@
             "Signal of Defect": "Invalid command exists in the job.\n(Software unmatch, or data unmatch by software update)",
             "Cause": "The error occurs in the MOTION job access. (job edition, CF operation)",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "0010": {
             "Message": "SYSTEM ERROR (JOB)",
@@ -1719,7 +1719,7 @@
             "Signal of Defect": "Opened handle shortage ",
             "Cause": "The error occurs in the MOTION job access. (job edition, CF operation)",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "0011": {
             "Message": "SYSTEM ERROR (JOB)",
@@ -1727,7 +1727,7 @@
             "Signal of Defect": "Write impossibility by multi open ",
             "Cause": "The error occurs in the MOTION job access. (job edition, CF operation)",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "0012": {
             "Message": "SYSTEM ERROR (JOB)",
@@ -1735,7 +1735,7 @@
             "Signal of Defect": "The command number exceeds 9999 at the command insertion to the job. ",
             "Cause": "The error occurs in the MOTION job access. (job edition, CF operation)",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "0013": {
             "Message": "SYSTEM ERROR (JOB)",
@@ -1743,7 +1743,7 @@
             "Signal of Defect": "The step number exceeds 999 at the step insertion to the job. ",
             "Cause": "The error occurs in the MOTION job access. (job edition, CF operation)",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "0014": {
             "Message": "SYSTEM ERROR (JOB)",
@@ -1751,7 +1751,7 @@
             "Signal of Defect": "A job was newly created with the same name of the undefined job already specified in the memory. ",
             "Cause": "The error occurs in the MOTION job access. (job edition, CF operation)",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "0063": {
             "Message": "SYSTEM ERROR (JOB)",
@@ -1761,14 +1761,14 @@
             "Potential Causes": [
                 "Software bugs or invalid NCP30 RAM memory."
             ],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         }
     },
     "4203": {
         "0001": {
             "Message": "SYSTEM ERROR (POSITION DATA)",
             "Location of Defect": "POSITION DATA",
-            "Signal of Defect": " Lack of area Uncompleted initialization (Defect)",
+            "Signal of Defect": "Lack of area Uncompleted initialization (Defect)",
             "Cause": "The error occurs in the MOTION position data access. (During play-back / operating)",
             "Potential Causes": [],
             "Sub-Code Description": "Data stands for the alarm factor."
@@ -1776,7 +1776,7 @@
         "0002": {
             "Message": "SYSTEM ERROR (POSITION DATA)",
             "Location of Defect": "POSITION DATA",
-            "Signal of Defect": " All axes number are 0. Uncompleted initialization (Defect)",
+            "Signal of Defect": "All axes number are 0. Uncompleted initialization (Defect)",
             "Cause": "The error occurs in the MOTION position data access. (During play-back / operating)",
             "Potential Causes": [],
             "Sub-Code Description": "Data stands for the alarm factor."
@@ -1784,7 +1784,7 @@
         "0003": {
             "Message": "SYSTEM ERROR (POSITION DATA)",
             "Location of Defect": "POSITION DATA",
-            "Signal of Defect": " Keeping the position on the axes number 0 is unable. Uncompleted initialization (Defect)",
+            "Signal of Defect": "Keeping the position on the axes number 0 is unable. Uncompleted initialization (Defect)",
             "Cause": "The error occurs in the MOTION position data access. (During play-back / operating)",
             "Potential Causes": [],
             "Sub-Code Description": "Data stands for the alarm factor."
@@ -1792,7 +1792,7 @@
         "0004": {
             "Message": "SYSTEM ERROR (POSITION DATA)",
             "Location of Defect": "POSITION DATA",
-            "Signal of Defect": " The total number of the keeping position is exceeded. Uncompleted initialization (Defect)",
+            "Signal of Defect": "The total number of the keeping position is exceeded. Uncompleted initialization (Defect)",
             "Cause": "The error occurs in the MOTION position data access. (During play-back / operating)",
             "Potential Causes": [],
             "Sub-Code Description": "Data stands for the alarm factor."
@@ -1800,7 +1800,7 @@
         "0005": {
             "Message": "SYSTEM ERROR (POSITION DATA)",
             "Location of Defect": "POSITION DATA",
-            "Signal of Defect": " The area is exceeds the system setting. Uncompleted initialization (Default) ",
+            "Signal of Defect": "The area is exceeds the system setting. Uncompleted initialization (Default) ",
             "Cause": "The error occurs in the MOTION position data access. (During play-back / operating)",
             "Potential Causes": [],
             "Sub-Code Description": "Data stands for the alarm factor."
@@ -1808,7 +1808,7 @@
         "0006": {
             "Message": "SYSTEM ERROR (POSITION DATA)",
             "Location of Defect": "POSITION DATA",
-            "Signal of Defect": " New acquisition file destruction CMOS memory destruction",
+            "Signal of Defect": "New acquisition file destruction CMOS memory destruction",
             "Cause": "The error occurs in the MOTION position data access. (During play-back / operating)",
             "Potential Causes": [],
             "Sub-Code Description": "Data stands for the alarm factor."
@@ -1816,7 +1816,7 @@
         "0007": {
             "Message": "SYSTEM ERROR (POSITION DATA)",
             "Location of Defect": "POSITION DATA",
-            "Signal of Defect": " The registrable position area (memory) is exceeded.",
+            "Signal of Defect": "The registrable position area (memory) is exceeded.",
             "Cause": "The error occurs in the MOTION position data access. (During play-back / operating)",
             "Potential Causes": [],
             "Sub-Code Description": "Data stands for the alarm factor."
@@ -1824,7 +1824,7 @@
         "0008": {
             "Message": "SYSTEM ERROR (POSITION DATA)",
             "Location of Defect": "POSITION DATA",
-            "Signal of Defect": " Position data destruction CMOS memory destruction",
+            "Signal of Defect": "Position data destruction CMOS memory destruction",
             "Cause": "The error occurs in the MOTION position data access. (During play-back / operating)",
             "Potential Causes": [],
             "Sub-Code Description": "Data stands for the alarm factor."
@@ -1832,7 +1832,7 @@
         "0009": {
             "Message": "SYSTEM ERROR (POSITION DATA)",
             "Location of Defect": "POSITION DATA",
-            "Signal of Defect": " Controlling information destruction CMOS memory destruction",
+            "Signal of Defect": "Controlling information destruction CMOS memory destruction",
             "Cause": "The error occurs in the MOTION position data access. (During play-back / operating)",
             "Potential Causes": [],
             "Sub-Code Description": "Data stands for the alarm factor."
@@ -1840,7 +1840,7 @@
         "000A": {
             "Message": "SYSTEM ERROR (POSITION DATA)",
             "Location of Defect": "POSITION DATA",
-            "Signal of Defect": " Illegal position number CMOS memory destruction",
+            "Signal of Defect": "Illegal position number CMOS memory destruction",
             "Cause": "The error occurs in the MOTION position data access. (During play-back / operating)",
             "Potential Causes": [],
             "Sub-Code Description": "Data stands for the alarm factor."
@@ -1848,7 +1848,7 @@
         "000B": {
             "Message": "SYSTEM ERROR (POSITION DATA)",
             "Location of Defect": "POSITION DATA",
-            "Signal of Defect": " Unregisterable position data",
+            "Signal of Defect": "Unregisterable position data",
             "Cause": "The error occurs in the MOTION position data access. (During play-back / operating)",
             "Potential Causes": [],
             "Sub-Code Description": "Data stands for the alarm factor."
@@ -1856,7 +1856,7 @@
         "000C": {
             "Message": "SYSTEM ERROR (POSITION DATA)",
             "Location of Defect": "POSITION DATA",
-            "Signal of Defect": " Undefined position ",
+            "Signal of Defect": "Undefined position ",
             "Cause": "The error occurs in the MOTION position data access. (During play-back / operating)",
             "Potential Causes": [],
             "Sub-Code Description": "Data stands for the alarm factor."
@@ -1864,7 +1864,7 @@
         "000D": {
             "Message": "SYSTEM ERROR (POSITION DATA)",
             "Location of Defect": "POSITION DATA",
-            "Signal of Defect": " Undefined control group",
+            "Signal of Defect": "Undefined control group",
             "Cause": "The error occurs in the MOTION position data access. (During play-back / operating)",
             "Potential Causes": [],
             "Sub-Code Description": "Data stands for the alarm factor."
@@ -1872,7 +1872,7 @@
         "000E": {
             "Message": "SYSTEM ERROR (POSITION DATA)",
             "Location of Defect": "POSITION DATA",
-            "Signal of Defect": " Uncompleted initialization",
+            "Signal of Defect": "Uncompleted initialization",
             "Cause": "The error occurs in the MOTION position data access. (During play-back / operating)",
             "Potential Causes": [],
             "Sub-Code Description": "Data stands for the alarm factor."
@@ -1880,7 +1880,7 @@
         "000F": {
             "Message": "SYSTEM ERROR (POSITION DATA)",
             "Location of Defect": "POSITION DATA",
-            "Signal of Defect": " The number of axes for the control groups exceeded the limit.",
+            "Signal of Defect": "The number of axes for the control groups exceeded the limit.",
             "Cause": "The error occurs in the MOTION position data access. (During play-back / operating)",
             "Potential Causes": [],
             "Sub-Code Description": "Data stands for the alarm factor."
@@ -1888,7 +1888,7 @@
         "0010": {
             "Message": "SYSTEM ERROR (POSITION DATA)",
             "Location of Defect": "POSITION DATA",
-            "Signal of Defect": " An error occurred in exclusive control.",
+            "Signal of Defect": "An error occurred in exclusive control.",
             "Cause": "The error occurs in the MOTION position data access. (During play-back / operating)",
             "Potential Causes": [],
             "Sub-Code Description": "Data stands for the alarm factor."
@@ -1896,7 +1896,7 @@
         "0011": {
             "Message": "SYSTEM ERROR (POSITION DATA)",
             "Location of Defect": "POSITION DATA",
-            "Signal of Defect": " An error occurred in exceptional control.",
+            "Signal of Defect": "An error occurred in exceptional control.",
             "Cause": "The error occurs in the MOTION position data access. (During play-back / operating)",
             "Potential Causes": [],
             "Sub-Code Description": "Data stands for the alarm factor."
@@ -1906,7 +1906,7 @@
         "0001": {
             "Message": "SYSTEM ERROR (POSITION DATA)",
             "Location of Defect": "POSITION DATA",
-            "Signal of Defect": " Lack of area Uncompleted initialization (Defect)",
+            "Signal of Defect": "Lack of area Uncompleted initialization (Defect)",
             "Cause": "The error occurs in the MOTION position data access. (During play-back / operating)",
             "Potential Causes": [],
             "Sub-Code Description": "Data stands for the alarm factor."
@@ -1914,7 +1914,7 @@
         "0002": {
             "Message": "SYSTEM ERROR (POSITION DATA)",
             "Location of Defect": "POSITION DATA",
-            "Signal of Defect": " All axes number are 0. Uncompleted initialization (Defect)",
+            "Signal of Defect": "All axes number are 0. Uncompleted initialization (Defect)",
             "Cause": "The error occurs in the position data access. (During play-back / operating)",
             "Potential Causes": [],
             "Sub-Code Description": "Data stands for the alarm factor."
@@ -1922,7 +1922,7 @@
         "0003": {
             "Message": "SYSTEM ERROR (POSITION DATA)",
             "Location of Defect": "POSITION DATA",
-            "Signal of Defect": " Keeping the position on the axes number 0 is unable. Uncompleted initialization (Defect)",
+            "Signal of Defect": "Keeping the position on the axes number 0 is unable. Uncompleted initialization (Defect)",
             "Cause": "The error occurs in the position data access. (During play-back / operating)",
             "Potential Causes": [],
             "Sub-Code Description": "Data stands for the alarm factor."
@@ -1930,7 +1930,7 @@
         "0004": {
             "Message": "SYSTEM ERROR (POSITION DATA)",
             "Location of Defect": "POSITION DATA",
-            "Signal of Defect": " The total number of the keeping position is exceeded. Uncompleted initialization (Defect)",
+            "Signal of Defect": "The total number of the keeping position is exceeded. Uncompleted initialization (Defect)",
             "Cause": "The error occurs in the position data access. (During play-back / operating)",
             "Potential Causes": [],
             "Sub-Code Description": "Data stands for the alarm factor."
@@ -1938,7 +1938,7 @@
         "0005": {
             "Message": "SYSTEM ERROR (POSITION DATA)",
             "Location of Defect": "POSITION DATA",
-            "Signal of Defect": " The area is exceeds the system setting. Uncompleted initialization (Default) ",
+            "Signal of Defect": "The area is exceeds the system setting. Uncompleted initialization (Default) ",
             "Cause": "The error occurs in the position data access. (During play-back / operating)",
             "Potential Causes": [],
             "Sub-Code Description": "Data stands for the alarm factor."
@@ -1946,7 +1946,7 @@
         "0006": {
             "Message": "SYSTEM ERROR (POSITION DATA)",
             "Location of Defect": "POSITION DATA",
-            "Signal of Defect": " New acquisition file destruction CMOS memory destruction",
+            "Signal of Defect": "New acquisition file destruction CMOS memory destruction",
             "Cause": "The error occurs in the position data access. (During play-back / operating)",
             "Potential Causes": [],
             "Sub-Code Description": "Data stands for the alarm factor."
@@ -1954,7 +1954,7 @@
         "0007": {
             "Message": "SYSTEM ERROR (POSITION DATA)",
             "Location of Defect": "POSITION DATA",
-            "Signal of Defect": " The registrable position area (memory) is exceeded.",
+            "Signal of Defect": "The registrable position area (memory) is exceeded.",
             "Cause": "The error occurs in the position data access. (During play-back / operating)",
             "Potential Causes": [],
             "Sub-Code Description": "Data stands for the alarm factor."
@@ -1962,7 +1962,7 @@
         "0008": {
             "Message": "SYSTEM ERROR (POSITION DATA)",
             "Location of Defect": "POSITION DATA",
-            "Signal of Defect": " Position data destruction CMOS memory destruction",
+            "Signal of Defect": "Position data destruction CMOS memory destruction",
             "Cause": "The error occurs in the position data access. (During play-back / operating)",
             "Potential Causes": [],
             "Sub-Code Description": "Data stands for the alarm factor."
@@ -1970,7 +1970,7 @@
         "0009": {
             "Message": "SYSTEM ERROR (POSITION DATA)",
             "Location of Defect": "POSITION DATA",
-            "Signal of Defect": " Controlling information destruction CMOS memory destruction",
+            "Signal of Defect": "Controlling information destruction CMOS memory destruction",
             "Cause": "The error occurs in the position data access. (During play-back / operating)",
             "Potential Causes": [],
             "Sub-Code Description": "Data stands for the alarm factor."
@@ -1978,7 +1978,7 @@
         "000A": {
             "Message": "SYSTEM ERROR (POSITION DATA)",
             "Location of Defect": "POSITION DATA",
-            "Signal of Defect": " Illegal position number CMOS memory destruction",
+            "Signal of Defect": "Illegal position number CMOS memory destruction",
             "Cause": "The error occurs in the position data access. (During play-back / operating)",
             "Potential Causes": [],
             "Sub-Code Description": "Data stands for the alarm factor."
@@ -1986,7 +1986,7 @@
         "000B": {
             "Message": "SYSTEM ERROR (POSITION DATA)",
             "Location of Defect": "POSITION DATA",
-            "Signal of Defect": " Unregisterable position data",
+            "Signal of Defect": "Unregisterable position data",
             "Cause": "The error occurs in the position data access. (During play-back / operating)",
             "Potential Causes": [],
             "Sub-Code Description": "Data stands for the alarm factor."
@@ -1994,7 +1994,7 @@
         "000C": {
             "Message": "SYSTEM ERROR (POSITION DATA)",
             "Location of Defect": "POSITION DATA",
-            "Signal of Defect": " Undefined position ",
+            "Signal of Defect": "Undefined position ",
             "Cause": "The error occurs in the position data access. (During play-back / operating)",
             "Potential Causes": [],
             "Sub-Code Description": "Data stands for the alarm factor."
@@ -2002,7 +2002,7 @@
         "000D": {
             "Message": "SYSTEM ERROR (POSITION DATA)",
             "Location of Defect": "POSITION DATA",
-            "Signal of Defect": " Undefined control group",
+            "Signal of Defect": "Undefined control group",
             "Cause": "The error occurs in the position data access. (During play-back / operating)",
             "Potential Causes": [],
             "Sub-Code Description": "Data stands for the alarm factor."
@@ -2010,7 +2010,7 @@
         "000E": {
             "Message": "SYSTEM ERROR (POSITION DATA)",
             "Location of Defect": "POSITION DATA",
-            "Signal of Defect": " Uncompleted initialization",
+            "Signal of Defect": "Uncompleted initialization",
             "Cause": "The error occurs in the position data access. (During play-back / operating)",
             "Potential Causes": [],
             "Sub-Code Description": "Data stands for the alarm factor."
@@ -2018,7 +2018,7 @@
         "000F": {
             "Message": "SYSTEM ERROR (POSITION DATA)",
             "Location of Defect": "POSITION DATA",
-            "Signal of Defect": " The number of axes for the control groups exceeded the limit.",
+            "Signal of Defect": "The number of axes for the control groups exceeded the limit.",
             "Cause": "The error occurs in the position data access. (During play-back / operating)",
             "Potential Causes": [],
             "Sub-Code Description": "Data stands for the alarm factor."
@@ -2026,7 +2026,7 @@
         "0010": {
             "Message": "SYSTEM ERROR (POSITION DATA)",
             "Location of Defect": "POSITION DATA",
-            "Signal of Defect": " An error occurred in exclusive control.",
+            "Signal of Defect": "An error occurred in exclusive control.",
             "Cause": "The error occurs in the position data access. (During play-back / operating)",
             "Potential Causes": [],
             "Sub-Code Description": "Data stands for the alarm factor."
@@ -2034,7 +2034,7 @@
         "0011": {
             "Message": "SYSTEM ERROR (POSITION DATA)",
             "Location of Defect": "POSITION DATA",
-            "Signal of Defect": " An error occurred in exceptional control.",
+            "Signal of Defect": "An error occurred in exceptional control.",
             "Cause": "The error occurs in the position data access. (During play-back / operating)",
             "Potential Causes": [],
             "Sub-Code Description": "Data stands for the alarm factor."
@@ -2114,7 +2114,7 @@
         "0002": {
             "Message": "SERVO POWER OFF FOR JOB",
             "Location of Defect": "",
-            "Signal of Defect": " ON_EN",
+            "Signal of Defect": "ON_EN",
             "Cause": "A safety circuit signal error occurred in I/O unit.",
             "Potential Causes": [],
             "Sub-Code Description": "The sub code stands for the defective signal. "
@@ -2122,10 +2122,10 @@
         "0003": {
             "Message": "SERVO POWER OFF FOR JOB",
             "Location of Defect": "",
-            "Signal of Defect": " OVSPD ",
+            "Signal of Defect": "OVSPD ",
             "Cause": "A safety circuit signal error occurred in I/O unit.",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the defective signal. "
+            "Sub-Code Description": "The sub code stands for the defective signal. "
         }
     },
     "4301": {
@@ -2135,7 +2135,7 @@
             "Signal of Defect": "",
             "Cause": "An error occurred in the contactor due to a defective contactor unit (NTU30) circuit board (AXC01).",
             "Potential Causes": [
-                " The contactor of contactor unit did not turn ON at servo ON.",
+                "The contactor of contactor unit did not turn ON at servo ON.",
                 "The signal from the contactor turned OFF while the servo was ON.",
                 "The signal from the contactor remains ON when the servo turned OFF at emergency stop.",
                 "The contactor turned ON while the servo was OFF for emergency stop. "
@@ -2150,10 +2150,10 @@
             "Signal of Defect": "",
             "Cause": "The brake relay signal did not turn ON when the servo turned ON.",
             "Potential Causes": [
-                " The brake relay signal turned OFF while the servo was ON.",
+                "The brake relay signal turned OFF while the servo was ON.",
                 "The brake signal remains ON when the servo turned OFF at emergency stop.",
                 "The brake signal turned ON while the servo was OFF for emergency stop.",
-                " Defective NTU30 power-on unit Defective AXC01 circuit board "
+                "Defective NTU30 power-on unit Defective AXC01 circuit board "
             ],
             "Sub-Code Description": "The sub code stands for the defective power-on unit No. "
         }
@@ -2165,14 +2165,14 @@
             "Signal of Defect": "",
             "Cause": "No response of charge completion was sent from the converter when the servo turned ON.",
             "Potential Causes": [
-                " The SERVO READY signal turned OFF while the servo was ON.",
+                "The SERVO READY signal turned OFF while the servo was ON.",
                 "The SERVO READY signal remains ON when the servo turned OFF at emergency stop.",
                 "The SERVO READY signal turned ON while the servo was OFF for emergency stop.",
-                " The primary power supply voltage is too low. ",
-                " The voltage dropped. ",
+                "The primary power supply voltage is too low. ",
+                "The voltage dropped. ",
                 "Defective servo control and/or converter."
             ],
-            "Sub-Code Description": " The sub code stands for the defective converter No."
+            "Sub-Code Description": "The sub code stands for the defective converter No."
         }
     },
     "4304": {
@@ -2187,7 +2187,7 @@
                 "Incorrect wiring or voltage drop of primary power supply",
                 "Defective servo control and/or converter."
             ],
-            "Sub-Code Description": " The sub code stands for the defective converter No. "
+            "Sub-Code Description": "The sub code stands for the defective converter No. "
         }
     },
     "4305": {
@@ -2211,7 +2211,7 @@
             "Message": "AMPLIFIER READY SIGNAL ERROR",
             "Location of Defect": "",
             "Signal of Defect": "",
-            "Cause": "No response \"Power ON\" was sent from the amplifier when the servo turned ON.",
+            "Cause": "No response \"Power ON\"was sent from the amplifier when the servo turned ON.",
             "Potential Causes": [
                 "The amplifier READY signal turned OFF while the servo was ON.",
                 "The amplifier READY signal remains ON when the servo turned OFF at emergency stop.",
@@ -2228,7 +2228,7 @@
             "Signal of Defect": "",
             "Cause": "The motion speed of the encoder before the dynamic brake turns OFF in servo ON sequence exceeded the threshold for a certain period.",
             "Potential Causes": [
-                " The servo power supply turned ON while the manipulator (motor and encoder) was moving. "
+                "The servo power supply turned ON while the manipulator (motor and encoder) was moving. "
             ],
             "Sub-Code Description": "The sub code stands for the defective axis."
         }
@@ -2240,7 +2240,7 @@
             "Signal of Defect": "",
             "Cause": "The DC power voltage supplied to the SERVOPACK amplifier dropped below 143V due to",
             "Potential Causes": [
-                " Low voltage of the primary power supply ",
+                "Low voltage of the primary power supply ",
                 "Open phase ",
                 "Defective converter",
                 "Defective servo control circuit board "
@@ -2257,7 +2257,7 @@
             "Potential Causes": [
                 "The position data in the encoder was lost due to the voltage drop of encoder backup battery."
             ],
-            "Sub-Code Description": " The sub code stands for the defective axis. "
+            "Sub-Code Description": "The sub code stands for the defective axis. "
         }
     },
     "4313": {
@@ -2281,7 +2281,7 @@
             "Potential Causes": [
                 "External force Interfering with external devices"
             ],
-            "Sub-Code Description": " The sub code stands for the defective axis. "
+            "Sub-Code Description": "The sub code stands for the defective axis. "
         }
     },
     "4318": {
@@ -2310,7 +2310,7 @@
                 "Defective amplifier.",
                 "Defective motor (Encoder)\n\n\n"
             ],
-            "Sub-Code Description": " The sub code stands for the defective axis. "
+            "Sub-Code Description": "The sub code stands for the defective axis. "
         }
     },
     "4321": {
@@ -2429,7 +2429,7 @@
                 "The primary power supply is too high. (220V+10%)",
                 "Converter failure - Defective servo control circuit board"
             ],
-            "Sub-Code Description": " The sub code stands for the defective converter No. "
+            "Sub-Code Description": "The sub code stands for the defective converter No. "
         }
     },
     "4335": {
@@ -2444,7 +2444,7 @@
                 "Defective servo control circuit board",
                 "Defective SERVOPACK"
             ],
-            "Sub-Code Description": " The sub code stands for the defective axis."
+            "Sub-Code Description": "The sub code stands for the defective axis."
         }
     },
     "4337": {
@@ -2456,9 +2456,9 @@
             "Potential Causes": [
                 "Motor failure ",
                 "Ground fault of motor line or lead cables",
-                " Defective servo control circuit board",
+                "Defective servo control circuit board",
                 "Defective amplifier ",
-                " Overheating of amplifier "
+                "Overheating of amplifier "
             ],
             "Sub-Code Description": "The sub code stands for the defective axis. "
         }
@@ -2497,7 +2497,7 @@
         "0001": {
             "Message": "WAFER ALIGNMENT ERROR (SERVO)",
             "Location of Defect": "SERVO",
-            "Signal of Defect": " Serial communication timeout",
+            "Signal of Defect": "Serial communication timeout",
             "Cause": "An error occurred in communications with the prealigner.",
             "Potential Causes": [],
             "Sub-Code Description": "The sub code stands for the alarm factor."
@@ -2505,7 +2505,7 @@
         "0002": {
             "Message": "WAFER ALIGNMENT ERROR (SERVO)",
             "Location of Defect": "SERVO",
-            "Signal of Defect": " Sampling buffer overflow",
+            "Signal of Defect": "Sampling buffer overflow",
             "Cause": "An error occurred in communications with the prealigner.",
             "Potential Causes": [],
             "Sub-Code Description": "The sub code stands for the alarm factor."
@@ -2513,7 +2513,7 @@
         "0003": {
             "Message": "WAFER ALIGNMENT ERROR (SERVO)",
             "Location of Defect": "SERVO",
-            "Signal of Defect": " Data number not refreshed ",
+            "Signal of Defect": "Data number not refreshed ",
             "Cause": "An error occurred in communications with the prealigner.",
             "Potential Causes": [],
             "Sub-Code Description": "The sub code stands for the alarm factor."
@@ -2584,7 +2584,7 @@
         "0001": {
             "Message": "SELECT ERROR (PARAMETER)",
             "Location of Defect": "PARAMETER FILE",
-            "Signal of Defect": " Selection error of motion system parameter ",
+            "Signal of Defect": "Selection error of motion system parameter ",
             "Cause": "A parameter error occurred in the path control section.",
             "Potential Causes": [],
             "Sub-Code Description": "The sub code stands for the alarm factor."
@@ -2594,7 +2594,7 @@
         "0008": {
             "Message": "GROUP AXIS CONTROL ERROR",
             "Location of Defect": "",
-            "Signal of Defect": " Occupation control error",
+            "Signal of Defect": "Occupation control error",
             "Cause": "An internal control error occurred in a coordinated motion.",
             "Potential Causes": [],
             "Sub-Code Description": "The sub code stands for the alarm factor."
@@ -2602,7 +2602,7 @@
         "0009": {
             "Message": "GROUP AXIS CONTROL ERROR",
             "Location of Defect": "",
-            "Signal of Defect": " Jog operation occupation control specification error ",
+            "Signal of Defect": "Jog operation occupation control specification error ",
             "Cause": "An internal control error occurred in a coordinated motion",
             "Potential Causes": [],
             "Sub-Code Description": "The sub code stands for the alarm factor."
@@ -2615,7 +2615,7 @@
             "Signal of Defect": "S/L",
             "Cause": "This alarm occurs when the form (folded direction) of 1st and 2nd axes at start point and end point are different in the execution of MOVJ instructions.",
             "Potential Causes": [
-                " The teaching position for the motion command where the alarm has occurred may have an error."
+                "The teaching position for the motion command where the alarm has occurred may have an error."
             ],
             "Sub-Code Description": ""
         }
@@ -2637,7 +2637,7 @@
             "Signal of Defect": "HIGH SPEED",
             "Cause": "The manipulator motion speed exceeded the limit (HIGH level).",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the defective axis. "
+            "Sub-Code Description": "The sub code stands for the defective axis. "
         }
     },
     "4416": {
@@ -2789,7 +2789,7 @@
         "0000": {
             "Message": "UNDEFINED GLOBAL VARIABLE",
             "Location of Defect": "",
-            "Signal of Defect": " byte type",
+            "Signal of Defect": "byte type",
             "Cause": "The global variable is not defined.",
             "Potential Causes": [],
             "Sub-Code Description": "The sub code stands for the variable type."
@@ -2799,7 +2799,7 @@
         "0001": {
             "Message": "UNDEFINED LOCAL VARIABLE",
             "Location of Defect": "",
-            "Signal of Defect": " integer type",
+            "Signal of Defect": "integer type",
             "Cause": "The local  variable is not defined.",
             "Potential Causes": [],
             "Sub-Code Description": "The sub code stands for the variable type."
@@ -2809,7 +2809,7 @@
         "0002": {
             "Message": "UNDEFINED LOCAL VARIABLE",
             "Location of Defect": "",
-            "Signal of Defect": " double-precision integer type",
+            "Signal of Defect": "double-precision integer type",
             "Cause": "The local  variable is not defined.",
             "Potential Causes": [],
             "Sub-Code Description": "The sub code stands for the variable type."
@@ -2817,7 +2817,7 @@
         "0007": {
             "Message": "UNDEFINED LOCAL VARIABLE",
             "Location of Defect": "",
-            "Signal of Defect": " byte type",
+            "Signal of Defect": "byte type",
             "Cause": "The local  variable is not defined.",
             "Potential Causes": [],
             "Sub-Code Description": "The sub code stands for the variable type."
@@ -2827,7 +2827,7 @@
         "0003": {
             "Message": "UNDEFINED LOCAL VARIABLE",
             "Location of Defect": "",
-            "Signal of Defect": " real type",
+            "Signal of Defect": "real type",
             "Cause": "The local  variable is not defined.",
             "Potential Causes": [],
             "Sub-Code Description": "The sub code stands for the variable type."
@@ -2837,7 +2837,7 @@
         "0004": {
             "Message": "UNDEFINED LOCAL VARIABLE",
             "Location of Defect": "",
-            "Signal of Defect": " character string type ",
+            "Signal of Defect": "character string type ",
             "Cause": "The local  variable is not defined.",
             "Potential Causes": [],
             "Sub-Code Description": "The sub code stands for the variable type."
@@ -2847,7 +2847,7 @@
         "0005": {
             "Message": "UNDEFINED LOCAL VARIABLE",
             "Location of Defect": "",
-            "Signal of Defect": " robot-axis position type",
+            "Signal of Defect": "robot-axis position type",
             "Cause": "The local  variable is not defined.",
             "Potential Causes": [],
             "Sub-Code Description": "The sub code stands for the variable type."
@@ -2865,7 +2865,7 @@
         "0006": {
             "Message": "UNDEFINED LOCAL VARIABLE",
             "Location of Defect": "",
-            "Signal of Defect": " base-axis position type",
+            "Signal of Defect": "base-axis position type",
             "Cause": "The local  variable is not defined.",
             "Potential Causes": [],
             "Sub-Code Description": "The sub code stands for the variable type."
@@ -2883,7 +2883,7 @@
         "0007": {
             "Message": "UNDEFINED LOCAL VARIABLE",
             "Location of Defect": "",
-            "Signal of Defect": " station-axis position type",
+            "Signal of Defect": "station-axis position type",
             "Cause": "The local  variable is not defined.",
             "Potential Causes": [],
             "Sub-Code Description": "The sub code stands for the variable type."
@@ -2927,7 +2927,7 @@
                 "Software bugs",
                 "Invalid NCP30 RAM memory"
             ],
-            "Sub-Code Description": " The sub code stands for the alarm factor. "
+            "Sub-Code Description": "The sub code stands for the alarm factor. "
         }
     },
     "4446": {
@@ -3226,22 +3226,22 @@
             "Signal of Defect": "master tool coordinate system",
             "Cause": "An invalid coordinate system was specified. The specified coordinate system does not exist.",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the coordinate system."
+            "Sub-Code Description": "The sub code stands for the coordinate system."
         },
         "0000": {
             "Message": "SPECIFIED ERROR (COORDINATE)",
             "Location of Defect": "COORDINATE",
-            "Signal of Defect": " H-LINK type cylindrical coordinate system ",
+            "Signal of Defect": "H-LINK type cylindrical coordinate system ",
             "Cause": "An invalid coordinate system was specified. The specified coordinate system does not exist.",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the coordinate system."
+            "Sub-Code Description": "The sub code stands for the coordinate system."
         }
     },
     "4513": {
         "0001:001F": {
             "Message": "EXCESSIVE SEGMENT (SAFETY1)",
             "Location of Defect": "",
-            "Signal of Defect": " LOW ",
+            "Signal of Defect": "LOW ",
             "Cause": "At the safety speed 1, the manipulator motion speed exceeded the speed limit value (LOW level).",
             "Potential Causes": [],
             "Sub-Code Description": "The sub code stands for the axis. "
@@ -3251,7 +3251,7 @@
         "0001:001F": {
             "Message": "EXCESSIVE SEGMENT (SAFETY1)",
             "Location of Defect": "",
-            "Signal of Defect": " HIGH ",
+            "Signal of Defect": "HIGH ",
             "Cause": "At the safety speed 1, the manipulator motion speed exceeded the speed limit value (HIGH level).",
             "Potential Causes": [],
             "Sub-Code Description": "The sub code stands for the axis. "
@@ -3261,7 +3261,7 @@
         "0001:001F": {
             "Message": "EXCESSIVE SEGMENT (SAFETY2)",
             "Location of Defect": "",
-            "Signal of Defect": " LOW ",
+            "Signal of Defect": "LOW ",
             "Cause": "At the safety speed 2, the manipulator motion speed exceeded the speed limit value (LOW level).",
             "Potential Causes": [],
             "Sub-Code Description": "The sub code stands for the axis. "
@@ -3271,7 +3271,7 @@
         "0001:001F": {
             "Message": "EXCESSIVE SEGMENT (SAFETY2)",
             "Location of Defect": "",
-            "Signal of Defect": " HIGH",
+            "Signal of Defect": "HIGH",
             "Cause": "At the safety speed 2, the manipulator motion speed exceeded the speed limit value (HIGH level).",
             "Potential Causes": [],
             "Sub-Code Description": "The sub code stands for the axis. "
@@ -3417,7 +3417,7 @@
             "Signal of Defect": "",
             "Cause": "The error occurred in the OS.",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the error code from the OS."
+            "Sub-Code Description": "The sub code stands for the error code from the OS."
         }
     },
     "4548": {
@@ -3514,7 +3514,7 @@
         "0001": {
             "Message": "CRSM Command Inexecutable [W2]",
             "Location of Defect": "W2",
-            "Signal of Defect": " CRSM command was received even though CHLT command hadn't been received.",
+            "Signal of Defect": "CRSM command was received even though CHLT command hadn't been received.",
             "Cause": "This alarm occurs when the CHLT command has not been executed or the external HOLD signal is OPEN when CRSM command is requested from host.",
             "Potential Causes": [],
             "Sub-Code Description": "The sub code stands for the alarm factor."
@@ -3522,7 +3522,7 @@
         "0002": {
             "Message": "CRSM Command Inexecutable [W2]",
             "Location of Defect": "W2",
-            "Signal of Defect": " CRSM command was received while external HOLD signal (EXHOLD) was OPEN ",
+            "Signal of Defect": "CRSM command was received while external HOLD signal (EXHOLD) was OPEN ",
             "Cause": "This alarm occurs when the CHLT command has not been executed or the external HOLD signal is OPEN when CRSM command is requested from host.",
             "Potential Causes": [],
             "Sub-Code Description": "The sub code stands for the alarm factor."
@@ -3535,17 +3535,17 @@
             "Signal of Defect": "",
             "Cause": "This alarm occurs if the manipulator is not located in ready position when MGET or MPUT or MPNT is requested.",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the command in which the alarm is detected."
+            "Sub-Code Description": "The sub code stands for the command in which the alarm is detected."
         }
     },
     "9005": {
         "0001": {
             "Message": "Execution Disabled Command [W2]",
             "Location of Defect": "W2",
-            "Signal of Defect": " An unexecutable command for the specified unit was sent",
+            "Signal of Defect": "An unexecutable command for the specified unit was sent",
             "Cause": "This alarm occurs if the requested command cannot be executed by the cause indicated by the sub code.",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "0003": {
             "Message": "Execution Disabled Command [W2]",
@@ -3553,7 +3553,7 @@
             "Signal of Defect": "CSRV command (Servo ON) for manipulator was received during alarm occurrence.",
             "Cause": "This alarm occurs if the requested command cannot be executed by the cause indicated by the sub code.",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "0004": {
             "Message": "Execution Disabled Command [W2]",
@@ -3561,7 +3561,7 @@
             "Signal of Defect": "CSRV command (Servo ON) for manipulator was received during emergency stop.",
             "Cause": "This alarm occurs if the requested command cannot be executed by the cause indicated by the sub code.",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "0005": {
             "Message": "Execution Disabled Command [W2]",
@@ -3569,7 +3569,7 @@
             "Signal of Defect": "CSRV command (Servo ON) for pre-aligner was received in the system of which parameter was set to \"Pre-aligner setting: Disabled\".",
             "Cause": "This alarm occurs if the requested command cannot be executed by the cause indicated by the sub code.",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "0006": {
             "Message": "Execution Disabled Command [W2]",
@@ -3577,7 +3577,7 @@
             "Signal of Defect": "CSRV command (Servo ON) for pre-aligner was received during alarm occurrence.",
             "Cause": "This alarm occurs if the requested command cannot be executed by the cause indicated by the sub code.",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "0007": {
             "Message": "Execution Disabled Command [W2]",
@@ -3585,15 +3585,15 @@
             "Signal of Defect": "CSRV command (Servo ON) for pre-aligner was received during emergency stop.",
             "Cause": "This alarm occurs if the requested command cannot be executed by the cause indicated by the sub code.",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "0009": {
             "Message": "Execution Disabled Command [W2]",
             "Location of Defect": "W2",
-            "Signal of Defect": "CLFT command was received even though the parameter of the system was set to \"Lifter existence: w/o lifter\" or \"Lifter control enable/disable: Disabled\".",
+            "Signal of Defect": "CLFT command was received even though the parameter of the system was set to \"Lifter existence: w/o lifter\"or \"Lifter control enable/disable: Disabled\".",
             "Cause": "This alarm occurs if the requested command cannot be executed by the cause indicated by the sub code.",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "000C": {
             "Message": "Execution Disabled Command [W2]",
@@ -3601,7 +3601,7 @@
             "Signal of Defect": "In the system of which Upper End-Effector is not Edge Grip, SPOS and SABS for mapping position were received.",
             "Cause": "This alarm occurs if the requested command cannot be executed by the cause indicated by the sub code.",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "000D": {
             "Message": "Execution Disabled Command [W2]",
@@ -3609,7 +3609,7 @@
             "Signal of Defect": "ISYS command for pre-aligner was received even though the parameter of the system was set to \"Pre-aligner setting: Disabled\".",
             "Cause": "This alarm occurs if the requested command cannot be executed by the cause indicated by the sub code.",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         },
         "000E": {
             "Message": "Execution Disabled Command [W2]",
@@ -3617,7 +3617,7 @@
             "Signal of Defect": "SPRM and DPRM were received during Servo ON status.",
             "Cause": "This alarm occurs if the requested command cannot be executed by the cause indicated by the sub code.",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         }
     },
     "9006": {
@@ -3627,7 +3627,7 @@
             "Signal of Defect": "",
             "Cause": "This alarm occurs when a point that the manipulator cannot move to is specified by MPNT command.",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         }
     },
     "9007": {
@@ -3637,7 +3637,7 @@
             "Signal of Defect": "",
             "Cause": "This alarm occurs if ISYS for the manipulator hasn't been completed when ISYS command is requested by the host of the pre-aligner.",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         }
     },
     "9008": {
@@ -3667,7 +3667,7 @@
             "Signal of Defect": "",
             "Cause": "This alarm occurs if the teaching for the specified station has not finished when a command is requested from host.",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         }
     },
     "9011": {
@@ -3680,7 +3680,7 @@
                 "Teaching is executed for the station which has an incorrect parameter setting. ",
                 "A via point, which is not defined in the station attribute parameter, is taught."
             ],
-            "Sub-Code Description": " The sub code stands for the alarm factor. "
+            "Sub-Code Description": "The sub code stands for the alarm factor. "
         },
         "0002": {
             "Message": "Incorrect Station Attribute [W2]",
@@ -3691,7 +3691,7 @@
                 "Teaching is executed for the station which has an incorrect parameter setting. ",
                 "A via point, which is not defined in the station attribute parameter, is taught."
             ],
-            "Sub-Code Description": " The sub code stands for the alarm factor. "
+            "Sub-Code Description": "The sub code stands for the alarm factor. "
         },
         "0003": {
             "Message": "Incorrect Station Attribute [W2]",
@@ -3702,7 +3702,7 @@
                 "Teaching is executed for the station which has an incorrect parameter setting. ",
                 "A via point, which is not defined in the station attribute parameter, is taught."
             ],
-            "Sub-Code Description": " The sub code stands for the alarm factor. "
+            "Sub-Code Description": "The sub code stands for the alarm factor. "
         },
         "0004": {
             "Message": "Incorrect Station Attribute [W2]",
@@ -3713,40 +3713,40 @@
                 "Teaching is executed for the station which has an incorrect parameter setting. ",
                 "A via point, which is not defined in the station attribute parameter, is taught."
             ],
-            "Sub-Code Description": " The sub code stands for the alarm factor. "
+            "Sub-Code Description": "The sub code stands for the alarm factor. "
         },
         "0005": {
             "Message": "Incorrect Station Attribute [W2]",
             "Location of Defect": "W2",
-            "Signal of Defect": "The IM3 position, of the station which was defined as \"IM3: None\" in Number of via point (Parameter i340 to i359), was taught.",
+            "Signal of Defect": "The IM3 position, of the station which was defined as \"IM3: None\"in Number of via point (Parameter i340 to i359), was taught.",
             "Cause": "This alarm occurs in the following cases",
             "Potential Causes": [
                 "Teaching is executed for the station which has an incorrect parameter setting. ",
                 "A via point, which is not defined in the station attribute parameter, is taught."
             ],
-            "Sub-Code Description": " The sub code stands for the alarm factor. "
+            "Sub-Code Description": "The sub code stands for the alarm factor. "
         },
         "0006": {
             "Message": "Incorrect Station Attribute [W2]",
             "Location of Defect": "W2",
-            "Signal of Defect": "The IM2 position, of the station which was defined as \"IM2: None\" in Number of via point (Parameter i340 to i359), was taught.",
+            "Signal of Defect": "The IM2 position, of the station which was defined as \"IM2: None\"in Number of via point (Parameter i340 to i359), was taught.",
             "Cause": "This alarm occurs in the following cases",
             "Potential Causes": [
                 "Teaching is executed for the station which has an incorrect parameter setting. ",
                 "A via point, which is not defined in the station attribute parameter, is taught."
             ],
-            "Sub-Code Description": " The sub code stands for the alarm factor. "
+            "Sub-Code Description": "The sub code stands for the alarm factor. "
         },
         "0007": {
             "Message": "Incorrect Station Attribute [W2]",
             "Location of Defect": "W2",
-            "Signal of Defect": "The IM1 position, of the station which was defined as \"IM1: None\" in Number of via point (Parameter i340 to i359), was taught.",
+            "Signal of Defect": "The IM1 position, of the station which was defined as \"IM1: None\"in Number of via point (Parameter i340 to i359), was taught.",
             "Cause": "This alarm occurs in the following cases",
             "Potential Causes": [
                 "Teaching is executed for the station which has an incorrect parameter setting. ",
                 "A via point, which is not defined in the station attribute parameter, is taught."
             ],
-            "Sub-Code Description": " The sub code stands for the alarm factor. "
+            "Sub-Code Description": "The sub code stands for the alarm factor. "
         }
     },
     "9031": {
@@ -3920,7 +3920,7 @@
             "Signal of Defect": "",
             "Cause": "This alarm occurs if the command to move the manipulator to the pre-aligner station is executed while the pre-aligner is operating.",
             "Potential Causes": [],
-            "Sub-Code Description": " The sub code stands for the alarm factor."
+            "Sub-Code Description": "The sub code stands for the alarm factor."
         }
     },
     "9051": {
@@ -3942,7 +3942,7 @@
     "9052": {
         "0001:0013": {
             "Message": "Wafer Presence Check Time-out [W2]",
-            "Location of Defect": " Lower end-effector",
+            "Location of Defect": "Lower end-effector",
             "Signal of Defect": "",
             "Cause": "This alarm occurs when the pressure switch cannot detect a wafer within the time specified in the manipulator parameter I030/i031 (Set value at shipping: 200, Unit: 10ms). The causes for this alarm can be as follows:",
             "Potential Causes": [
@@ -3978,7 +3978,7 @@
     "9054": {
         "0001:0013": {
             "Message": "Wafer Presence Check Time-out [W2]",
-            "Location of Defect": " Upper end-effector",
+            "Location of Defect": "Upper end-effector",
             "Signal of Defect": "",
             "Cause": "This alarm occurs when the pressure switch cannot detect a wafer within the time specified in the manipulator parameter I030/i031 (Set value at shipping: 200, Unit: 10ms). The causes for this alarm can be as follows:",
             "Potential Causes": [
@@ -4014,9 +4014,9 @@
     "9056": {
         "0001": {
             "Message": "Wafer Drop Error [W2]",
-            "Location of Defect": " Lower end-effector",
+            "Location of Defect": "Lower end-effector",
             "Signal of Defect": "",
-            "Cause": "This alarm occurs when the pressure switch signal has changed its status from \"with wafer (ON)\" to \"without wafer (OFF)\" while a wafer is being transported. The causes for this alarm can be as follows:",
+            "Cause": "This alarm occurs when the pressure switch signal has changed its status from \"with wafer (ON)\"to \"without wafer (OFF)\" while a wafer is being transported. The causes for this alarm can be as follows:",
             "Potential Causes": [
                 "Teaching Error",
                 "Error in command sending order",
@@ -4089,7 +4089,7 @@
             "Cause": "This alarm occurs when the eccentricity of the wafer exceeds 5mm as the result of the alignment. The followings can be the causes for this alarm",
             "Potential Causes": [
                 "Teaching error for the manipulator",
-                " Incorrect standard position (300mm ready position) of the pre-aligner "
+                "Incorrect standard position (300mm ready position) of the pre-aligner "
             ],
             "Sub-Code Description": ""
         }
@@ -4205,7 +4205,7 @@
         "0001:000F": {
             "Message": "Plunger motion Time-out [W2]",
             "Location of Defect": "W2",
-            "Signal of Defect": " Lower end-effector",
+            "Signal of Defect": "Lower end-effector",
             "Cause": "This alarm occurs if the sensor flag of the plunger doesn't shade a wafer grip sensor within the time specified by the manipulator parameter I021 (Set value at shipping: 80, Unit 10ms). The causes for this alarm can be as follows::",
             "Potential Causes": [
                 "The plunger motion speed has decelerated.",
@@ -4215,14 +4215,14 @@
                 "Wafer grip sensor failure",
                 "Parameter setting error\n\n\n\n\n"
             ],
-            "Sub-Code Description": " The sub code stands for the timing when the alarm occurs. "
+            "Sub-Code Description": "The sub code stands for the timing when the alarm occurs. "
         }
     },
     "9084": {
         "0001:000F": {
             "Message": "Plunger motion Time-out [W2]",
             "Location of Defect": "W2",
-            "Signal of Defect": " Upper end-effector",
+            "Signal of Defect": "Upper end-effector",
             "Cause": "This alarm occurs if the sensor flag of the plunger doesn't shade a wafer grip sensor within the time specified by the manipulator parameter I021 (Set value at shipping: 80, Unit 10ms). The causes for this alarm can be as follows::",
             "Potential Causes": [
                 "The plunger motion speed has decelerated.",
@@ -4247,7 +4247,7 @@
                 "Lifter sensor error",
                 "Lifter sensor position deviation"
             ],
-            "Sub-Code Description": " The sub code stands for the timing when the alarm occurs. "
+            "Sub-Code Description": "The sub code stands for the timing when the alarm occurs. "
         }
     },
     "9087": {
@@ -4318,7 +4318,7 @@
             "Potential Causes": [
                 "There is no wafer on the pre-aligner",
                 "Vacuum leak",
-                " Pressure switch failure "
+                "Pressure switch failure "
             ],
             "Sub-Code Description": ""
         }
@@ -4627,7 +4627,7 @@
             "Potential Causes": [
                 "Blockage of vacuum air",
                 "There is dust or dirt or scratches on the lens of the linear sensor or the filter.",
-                " Linear sensor failure",
+                "Linear sensor failure",
                 "Vacuum leak",
                 "Pressure switch failure "
             ],
@@ -4658,7 +4658,7 @@
         "0001": {
             "Message": "MACRO Accept Error [W2]",
             "Location of Defect": "W2",
-            "Signal of Defect": " Manipulator",
+            "Signal of Defect": "Manipulator",
             "Cause": "A new transfer command is sent during the process of another transfer command",
             "Potential Causes": [],
             "Sub-Code Description": "The sub code stands for the unit in which the alarm is detected."
@@ -4666,7 +4666,7 @@
         "0002": {
             "Message": "MACRO Accept Error [W2]",
             "Location of Defect": "W2",
-            "Signal of Defect": " Pre-aligner ",
+            "Signal of Defect": "Pre-aligner ",
             "Cause": "A new transfer command is sent during the process of another transfer command.",
             "Potential Causes": [],
             "Sub-Code Description": "The sub code stands for the unit in which the alarm is detected."
@@ -4679,7 +4679,7 @@
             "Signal of Defect": "",
             "Cause": "This alarm occurs if the route calculated during teaching a position or during a system motion command is outside the motion range of the manipulator. The causes are When instructing teaching position, \u00ef Blockage of vacuum air \u00ef Position name is instructed incorrectly. (such as STA) \u00ef End-Effector is instructed incorrectly. (1/ 2) \u00ef Parameter error R460 to R479 and R480 to R499 When moving to relative position, \u00ef The motion distance instruction is out of the operation range. When executing a transport system command. \u00ef Parameter error R120 to R319 (Transfer offset)",
             "Potential Causes": [],
-            "Sub-Code Description": " Sub code differs depending on the command at alarm occurrence. "
+            "Sub-Code Description": "Sub code differs depending on the command at alarm occurrence. "
         }
     },
     "9102": {
@@ -4729,7 +4729,7 @@
             "Signal of Defect": "",
             "Cause": "This alarm occurs if CCLR, MACR, ISYS or motion command is received in the status that external hold signal (EXHOLD) is open.",
             "Potential Causes": [],
-            "Sub-Code Description": " Sub code differs depending on the command at alarm occurrence. "
+            "Sub-Code Description": "Sub code differs depending on the command at alarm occurrence. "
         }
     },
     "9107": {
