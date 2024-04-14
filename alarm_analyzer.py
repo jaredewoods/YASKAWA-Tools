@@ -4773,6 +4773,7 @@ alarm_dict = {
 # noinspection PyUnusedLocal
 class AlarmAnalyzer:
     def __init__(self, master):
+        # Initialize instance variables
         self.cause_text = None
         self.message_text = None
         self.signal_of_defect_text = None
@@ -4804,12 +4805,14 @@ class AlarmAnalyzer:
         style = ttk.Style()
         style.configure("Grey.TLabel", foreground="grey")
 
+        # Label and combobox for KLA Alarm
         ttk.Label(self.master, text="KLA ALARM", font=label_font, style="Grey.TLabel", width=10).grid(row=0, column=0, padx=(5, 0), pady=(20, 5))
         self.alarm_combo = ttk.Combobox(self.master, font=entry_font, width=6, height=23)
         self.alarm_combo.grid(row=0, column=1, pady=(20, 5))
         self.alarm_combo['values'] = list(alarm_dict.keys())
         self.alarm_combo.bind('<<ComboboxSelected>>', self.update_subcodes)
 
+        # Label and combobox for Sub-Code
         ttk.Label(self.master, text="SUB-CODE", font=label_font, style="Grey.TLabel", width=10).grid(row=0, column=2, pady=(20, 5))
         self.subcode_combo = ttk.Combobox(self.master, font=entry_font, width=9)
         self.subcode_combo.grid(row=0, column=3, pady=(20, 5))
@@ -4819,6 +4822,7 @@ class AlarmAnalyzer:
         style = ttk.Style()
         style.configure("Grey.TLabel", foreground="grey")
 
+        # Labels and text fields for Location, Signal, Message, and Cause
         ttk.Label(self.master, text="LOCATION", font=label_font, style="Grey.TLabel").grid(row=2, column=0, padx=5)
         self.location_of_defect_text = tk.Text(self.master, height=2, width=30, font=entry_font)
         self.location_of_defect_text.grid(row=2, column=1, columnspan=3, sticky=tk.EW)
@@ -4831,15 +4835,17 @@ class AlarmAnalyzer:
         self.message_text = tk.Text(self.master, height=2, width=30, font=entry_font)
         self.message_text.grid(row=4, column=1, columnspan=3, sticky=tk.EW)
 
-        ttk.Label(self.master, text="CAUSE", font=label_font, style="Grey.TLabel").grid(row=5, column=0, padx=5)
+        ttk.Label(self.master, text="CAUSE", font=label_font, style="Grey.TLabel").grid(row=5, column=0, padx=5, pady=10, sticky="N")
         self.cause_text = tk.Text(self.master, height=5, width=30, font=entry_font)
         self.cause_text.grid(row=5, column=1, columnspan=3, sticky=tk.EW)
 
     def setup_info_text(self, entry_font):
+        # Text area for displaying Potential Causes and Sub-Code Description
         self.info_text = tk.Text(self.master, font=entry_font, height=10, width=50)
         self.info_text.grid(row=6, column=0, columnspan=4, sticky=tk.EW)
 
     def update_subcodes(self, event):
+        # Update sub-codes based on the selected alarm code
         alarm_code = self.alarm_combo.get()
         sub_codes = list(alarm_dict[alarm_code].keys())
         self.subcode_combo['values'] = sub_codes
@@ -4851,6 +4857,7 @@ class AlarmAnalyzer:
             self.info_text.delete(1.0, tk.END)
 
     def display_info(self, event):
+        # Display information related to the selected sub-code
         sub_code = self.subcode_combo.get()
         if not sub_code:
             return
@@ -4873,6 +4880,7 @@ class AlarmAnalyzer:
 
     @staticmethod
     def update_text_widget(widget, text):
+        # Update text in a text widget
         widget.delete(1.0, tk.END)
         widget.insert(tk.END, text)
 
