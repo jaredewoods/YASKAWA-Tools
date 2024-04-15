@@ -35,5 +35,5 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon=['KLA-red_on_black.ico'],
+    icon=['KLA-alarm_analyzer.ico'],
 )

@@ -4802,8 +4802,8 @@ class AlarmAnalyzer:
         master.title("KLA Alarm Analyzer")
 
         # Define fonts
-        label_font = tkFont.Font(family="Arial", size=14)
-        entry_font = tkFont.Font(family="Courier New", size=14)
+        label_font = tkFont.Font(family="Arial", size=12)
+        entry_font = tkFont.Font(family="Courier New", size=12)
 
         # Initialize UI components
         self.initialize_ui(label_font, entry_font)
