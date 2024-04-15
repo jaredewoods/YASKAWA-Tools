@@ -4690,7 +4690,7 @@
                 "The following causes are when moving to relative position",
                 "The motion distance instruction is out of the operation range",
                 "When executing a transport system command",
-                "Parameter error R120 to R319 (Transfer offset)", ],
+                "Parameter error R120 to R319 (Transfer offset)" ],
             "Sub-Code Description": "Sub code differs depending on the command at alarm occurrence"
         }
     },
@@ -4722,7 +4722,7 @@
             "Cause": "This alarm occurs in the following cases",
             "Potential Causes": [
                 "Fence signal (both SAFF1 and 2 ) is open while the manipulator or prealigner is moving",
-                "CCLR, CSRV, MACR, ISYS or motion command is received in the status that fence signal ( both SAFF1 and 2 ) is open", ],
+                "CCLR, CSRV, MACR, ISYS or motion command is received in the status that fence signal ( both SAFF1 and 2 ) is open" ],
             "Sub-Code Description": "Sub code differs depending on the command at alarm occurrence"
         }
     },
@@ -4734,7 +4734,7 @@
             "Cause": "This alarm occurs in the following cases",
             "Potential Causes": [
                 "External servo power ON signal (EXSVON) is open while the manipulator or pre-aligner is moving",
-                "CCLR, CSRV, MACR, ISYS or motion command is received in the status that external servo power ON signal is open", ],
+                "CCLR, CSRV, MACR, ISYS or motion command is received in the status that external servo power ON signal is open" ],
             "Sub-Code Description": "Sub code differs depending on the command at alarm occurrence"
         }
     },
