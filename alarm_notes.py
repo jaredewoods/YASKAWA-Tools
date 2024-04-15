@@ -1,6 +1,10 @@
 import tkinter as tk
-from tkinter import ttk
-import tkinter.font as tkFont
+from tkinter import ttk, messagebox, font as tkFont
+import pandas as pd
+
+# Load the Excel workbook
+excel_path = r'G:\DATA\REPAIR\Semi-Conductor Section Info\Procedures & notes\Brian Shanders Notes\FORMS\Training Doc\RMA Failure History.xlsx'
+data = pd.read_excel(excel_path, sheet_name='KLA Cont ')
 
 
 # Embedded alarm dictionary with the specified alarm and sub-codes
@@ -4816,6 +4820,10 @@ class AlarmAnalyzer:
         # Setup individual fields for Message, Location, Signal, and Cause
         self.setup_fields(label_font, entry_font)
 
+        # Add button to show tech notes
+        ttk.Button(self.master, text="Show Tech Notes", command=self.show_tech_notes).grid(row=1, column=3, padx=5, pady=5, sticky='nsew')
+
+    # Existing methods like setup_comboboxes and setup_fields remain unchanged
     def setup_comboboxes(self, label_font, entry_font):
         style = ttk.Style()
         style.configure("Grey.TLabel", foreground="grey")
@@ -4910,7 +4918,50 @@ class AlarmAnalyzer:
         self.info_text.insert(tk.END, causes)
 
     def show_tech_notes(self):
-        print("Tech Notes", "Placeholder function to show tech notes.")
+        alarm_code = self.alarm_combo.get()
+        if alarm_code:
+            results = self.search_alarm_code(alarm_code)
+            self.open_results_window(results)
+
+    def search_alarm_code(self, alarm_code):
+        print(f"Searching for alarm code: {alarm_code}")
+        data['Error Code 1'] = data['Error Code 1'].astype(str).str.strip()
+        data['Error Code 2'] = data['Error Code 2'].astype(str).str.strip()
+        data['Error Code 3'] = data['Error Code 3'].astype(str).str.strip()
+        filtered_data = data[(data['Error Code 1'] == alarm_code) |
+                             (data['Error Code 2'] == alarm_code) |
+                             (data['Error Code 3'] == alarm_code)]
+        return filtered_data
+
+    def open_results_window(self, results):
+        if results.empty:
+            messagebox.showinfo("Search Results", "No records found for this alarm code.")
+            return
+
+        results_window = tk.Toplevel(self.master)
+        results_window.title("Search Results")
+        listbox = tk.Listbox(results_window, width=80, height=10)
+        listbox.pack(padx=10, pady=10)
+
+        for _, row in results.iterrows():
+            display_text = f"{row['RMA Number']} - {row['Serial Number']} - {row['Model Type']} - {row['Revison Type']} - {row['Part Number']}"
+            listbox.insert(tk.END, display_text)
+
+        listbox.bind('<<ListboxSelect>>', lambda event: self.show_detail(results, event))
+
+    def show_detail(self, results, event):
+        selection = event.widget.curselection()
+        if selection:
+            index = selection[0]
+            selected_row = results.iloc[index]
+            details = f"Solution: {selected_row['Solution']}\n\nSummary: {selected_row['Eval Summary']}"
+            messagebox.showinfo("Detailed Info", details)
+
+# Main application logic
+root = tk.Tk()
+app = AlarmAnalyzer(root)
+root.mainloop()
+
 
 
 # Create the main window and pass it to the Application
