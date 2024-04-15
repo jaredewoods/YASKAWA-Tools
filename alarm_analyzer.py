@@ -4864,7 +4864,7 @@ class AlarmAnalyzer:
 
         # Possible Causes
         ttk.Label(self.master, text="POTENTIAL\n  CAUSES", font=label_font, anchor="center", foreground="grey").grid(
-            row=10, column=0, padx=5, sticky='nsew')
+            row=10, column=0, padx=5, sticky='new')
         self.info_text = tk.Text(self.master, height=18, width=40, font=entry_font, padx=5, wrap=tk.WORD)
         self.info_text.grid(row=10, column=1, columnspan=3, padx=(0, 10), pady=(0, 10), sticky='EW')
 
