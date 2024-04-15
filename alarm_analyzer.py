@@ -4280,7 +4280,6 @@ alarm_dict = {
                 "Wafer deviation",
                 "Screening of chucking opening by foreign object",
                 "Vacuum piping obstruction",
-                "Pressure switch failure",
                 "Pressure switch failure"
             ],
             "Sub-Code Description": ""
@@ -4821,52 +4820,53 @@ class AlarmAnalyzer:
         style.configure("Grey.TLabel", foreground="grey")
 
         # Label and combobox for KLA Alarm
-        ttk.Label(self.master, text="ALARM\n CODE", font=label_font, style="Grey.TLabel", anchor="center",
-                  width=10).grid(row=0, column=0, sticky="e", padx=0, pady=(20, 5))
-        self.alarm_combo = ttk.Combobox(self.master, font=entry_font, width=7, height=23)
-        self.alarm_combo.grid(row=0, column=1, pady=(20, 5))
+        ttk.Label(self.master, text="ALARM CODE", font=label_font, style="Grey.TLabel", anchor="center",
+                  width=12).grid(row=0, column=1, sticky="", padx=5, pady=0)
+        self.alarm_combo = ttk.Combobox(self.master, font=entry_font, width=7, height=25)
+        self.alarm_combo.grid(row=1, column=1, pady=5)
         self.alarm_combo['values'] = list(alarm_dict.keys())
         self.alarm_combo.bind('<<ComboboxSelected>>', self.update_subcodes)
 
         # Label and combobox for Sub-Code
-        ttk.Label(self.master, text=" SUB-\nCODE", font=label_font, style="Grey.TLabel", width=8, anchor="center").grid(
-            row=0, column=2,
-            pady=(20, 5))
+        ttk.Label(self.master, text=" SUB-CODE", font=label_font, style="Grey.TLabel", width=10, anchor="center").grid(
+            row=0, column=2, pady=0)
         self.subcode_combo = ttk.Combobox(self.master, font=entry_font, width=9)
-        self.subcode_combo.grid(row=0, column=3, padx=(0, 10), pady=(20, 5))
+        self.subcode_combo.grid(row=1, column=2, padx=5, pady=5)
         self.subcode_combo.bind('<<ComboboxSelected>>', self.display_info)
+
+        separator = ttk.Separator(self.master, orient='horizontal')
+        separator.grid(row=2, columnspan=3, sticky='ew', padx=5, pady=5)
 
     def setup_fields(self, label_font, entry_font):
         # Sub-Code Description
         ttk.Label(self.master, text="  SUB-CODE\nDESCRIPTION", font=label_font, anchor="center",
-                  foreground="grey").grid(row=2, column=0, padx=5,
-                                          sticky='nsew')
-        self.subcode_description_text = tk.Text(self.master, height=2, width=30, font=entry_font, padx=5, wrap=tk.WORD)
-        self.subcode_description_text.grid(row=2, column=1, columnspan=3, padx=(0, 10), sticky='EW')
+                  foreground="grey").grid(row=6, column=0, padx=5, sticky='nsew')
+        self.subcode_description_text = tk.Text(self.master, height=2, width=40, font=entry_font, padx=5, wrap=tk.WORD)
+        self.subcode_description_text.grid(row=6, column=1, columnspan=3, padx=(0, 10), sticky='EW')
 
         # Location of Defect
         ttk.Label(self.master, text=" LOCATION\nOF DEFECT", font=label_font, anchor="center", foreground="grey").grid(
-            row=3, column=0, padx=5, sticky='nsew')
-        self.location_of_defect_text = tk.Text(self.master, height=2, width=30, font=entry_font, padx=5, wrap=tk.WORD)
-        self.location_of_defect_text.grid(row=3, column=1, columnspan=3, padx=(0, 10), sticky='EW')
+            row=7, column=0, padx=5, sticky='nsew')
+        self.location_of_defect_text = tk.Text(self.master, height=2, width=40, font=entry_font, padx=5, wrap=tk.WORD)
+        self.location_of_defect_text.grid(row=7, column=1, columnspan=3, padx=(0, 10), sticky='EW')
 
         # Signal of Defect
         ttk.Label(self.master, text="   SIGNAL\nOF DEFECT", font=label_font, anchor="center", foreground="grey").grid(
-            row=4, column=0, padx=5, sticky='nsew')
-        self.signal_of_defect_text = tk.Text(self.master, height=2, width=30, font=entry_font, padx=5, wrap=tk.WORD)
-        self.signal_of_defect_text.grid(row=4, column=1, columnspan=3, padx=(0, 10), sticky='EW')
+            row=8, column=0, padx=5, sticky='nsew')
+        self.signal_of_defect_text = tk.Text(self.master, height=4, width=40, font=entry_font, padx=5, wrap=tk.WORD)
+        self.signal_of_defect_text.grid(row=8, column=1, columnspan=3, padx=(0, 10), sticky='EW')
 
         # Message
         ttk.Label(self.master, text="MESSAGE", font=label_font, anchor="center",
-                  foreground="grey").grid(row=5, column=0, padx=5, sticky='nsew')
-        self.message_text = tk.Text(self.master, height=2, width=30, font=entry_font, padx=5, wrap=tk.WORD)
-        self.message_text.grid(row=5, column=1, columnspan=3, padx=(0, 10), sticky='EW')
+                  foreground="grey").grid(row=9, column=0, padx=5, sticky='nsew')
+        self.message_text = tk.Text(self.master, height=2, width=40, font=entry_font, padx=5, wrap=tk.WORD)
+        self.message_text.grid(row=9, column=1, columnspan=3, padx=(0, 10), sticky='EW')
 
         # Possible Causes
-        ttk.Label(self.master, text="POSSIBLE\n  CAUSES", font=label_font, anchor="center", foreground="grey").grid(
-            row=6, column=0, padx=5, sticky='new')
-        self.info_text = tk.Text(self.master, height=12, width=30, font=entry_font, padx=5, wrap=tk.WORD)
-        self.info_text.grid(row=6, column=1, columnspan=3, padx=(0, 10), pady=(0, 10), sticky='EW')
+        ttk.Label(self.master, text="POTENTIAL\n  CAUSES", font=label_font, anchor="center", foreground="grey").grid(
+            row=10, column=0, padx=5, sticky='nsew')
+        self.info_text = tk.Text(self.master, height=18, width=40, font=entry_font, padx=5, wrap=tk.WORD)
+        self.info_text.grid(row=10, column=1, columnspan=3, padx=(0, 10), pady=(0, 10), sticky='EW')
 
     def update_subcodes(self, event):
         # Update sub-codes based on the selected alarm code
