@@ -1,4 +1,5 @@
 # Alarm Code Lookup App
+pyinstaller --onefile --noconfirm --clean your_script.py
 
 ## Description
 The Alarm Code Lookup App is a graphical user interface (GUI) application built in Python using Tkinter and ttk libraries. It provides a convenient way to look up Alarm codes, their descriptions, and associated information.
