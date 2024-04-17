@@ -1,13 +1,8 @@
 import base64
-from io import BytesIO
 import tkinter as tk
 from tkinter import ttk, messagebox, PhotoImage, font as tkFont
+
 import pandas as pd
-
-# Load the Excel workbook
-excel_path = r'G:\DATA\REPAIR\Semi-Conductor Section Info\Procedures & notes\Brian Shanders Notes\FORMS\Training Doc\RMA Failure History.xlsx'
-data = pd.read_excel(excel_path, sheet_name='KLA Cont ')
-
 
 # Embedded alarm dictionary with the specified alarm and sub-codes
 alarm_dict = {
@@ -4791,6 +4786,11 @@ alarm_dict = {
         }
     }
 }
+# Load the Excel workbook at work
+# excel_path = r'G:\DATA\REPAIR\Semi-Conductor Section Info\Procedures & notes\Brian Shanders Notes\FORMS\Training Doc\RMA Failure History.xlsx'
+# Load the Excel workbook at work
+excel_path = r'/Users/jaredwoods/PycharmProjects/RMA Failure History.xlsx'
+data = pd.read_excel(excel_path, sheet_name='KLA Cont ')
 
 
 # noinspection PyUnusedLocal
