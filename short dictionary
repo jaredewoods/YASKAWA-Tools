@@ -1,0 +1,273 @@
+# Embedded alarm dictionary with the specified alarm and sub-codes
+alarm_dict = {
+    "0020": {
+        "0001": {
+            "Message": "CPU COMMUNICATION ERROR",
+            "Location of Defect": "NCP30",
+            "Signal of Defect": "",
+            "Cause": "An error occurred in communications between boards when the control power turned ON due to",
+            "Potential Causes": [
+                "Insertion of the circuit board is not completed",
+                "Defective circuit board",
+                "Corrupt memory on the CF "
+            ],
+            "Sub-Code Description": "The sub code stands for the defective board"
+        },
+        "0032": {
+            "Message": "CPU COMMUNICATION ERROR",
+            "Location of Defect": "AXC01",
+            "Signal of Defect": "",
+            "Cause": "An error occurred in communications between boards when the control power turned ON due to",
+            "Potential Causes": [
+                "Insertion of the circuit board is not completed",
+                "Defective circuit board",
+                "Corrupt memory on the CF"
+            ],
+            "Sub-Code Description": "The sub code stands for the defective board"
+        }
+    },
+    "0021": {
+        "0032": {
+            "Message": "COMMUNICATION ERROR (SERVO)",
+            "Location of Defect": "SERVO",
+            "Signal of Defect": "",
+            "Cause": "The communications CPU for the AXC01 detected an error when the control power turned ON due to",
+            "Potential Causes": [
+                "Defective connection of communication cable for servopack",
+                "Defective connection of terminal connector",
+                "Defective circuit board",
+                "Corrupt memory on the CF"
+            ],
+            "Sub-Code Description": ""
+        }
+    },
+    "0030": {
+        "0032": {
+            "Message": "ROM ERROR",
+            "Location of Defect": "",
+            "Signal of Defect": "",
+            "Cause": "The system program of AXC01 is damaged",
+            "Potential Causes": [],
+            "Sub-Code Description": ""
+        }
+    },
+    "0060": {
+        "0001": {
+            "Message": "COMMUNICATION ERROR (I/O MODULE)",
+            "Location of Defect": "I/O MODULE",
+            "Signal of Defect": "",
+            "Cause": "An error was detected in communications with an I/O module board (NIF30) when the control power turned ON",
+            "Potential Causes": [],
+            "Sub-Code Description": ""
+        }
+    },
+    "0100": {
+        "0001": {
+            "Message": "MEMORY ERROR (JOB MNG DATA)",
+            "Location of Defect": "JOB MNG DATA",
+            "Signal of Defect": "",
+            "Cause": "An error was detected in communications with the AXC01",
+            "Potential Causes": [
+                "Abnormal AXC01 serial communication Watch Dog value"
+            ],
+            "Sub-Code Description": "The sub code stands for the alarm factor"
+        },
+        "0002": {
+            "Message": "MEMORY ERROR (JOB MNG DATA)",
+            "Location of Defect": "JOB MNG DATA",
+            "Signal of Defect": "",
+            "Cause": "An error was detected in communications with the AXC01",
+            "Potential Causes": [
+                "AXC01 serial communication watch dog missed one scan cycle"
+            ],
+            "Sub-Code Description": "The sub code stands for the alarm factor"
+        }
+    },
+    "0200": {
+        "0000:005F": {
+            "Message": "MEMORY ERROR (PARAMETER FILE)",
+            "Location of Defect": "PARAMETER FILE",
+            "Signal of Defect": "",
+            "Cause": "The parameter file is damaged due to",
+            "Potential Causes": [
+                "corrupt memory on the CF"
+            ],
+            "Sub-Code Description": ""
+        }
+    },
+    "0210": {
+        "0000": {
+            "Message": "MEMORY ERROR (SYSTEM CONFIGDATA)",
+            "Location of Defect": "SYSTEM CONFIGDATA",
+            "Signal of Defect": "",
+            "Cause": "The system configuration information data are damaged due to",
+            "Potential Causes": [
+                "corrupt memory on the CF",
+                "corrupt memory on the NCP30"
+            ],
+            "Sub-Code Description": ""
+        }
+    },
+    "0220": {
+        "0001": {
+            "Message": "MEMORY ERROR (JOB MNG DATA)",
+            "Location of Defect": "JOB MNG DATA",
+            "Signal of Defect": "",
+            "Cause": "The management data of job files are damaged due to",
+            "Potential Causes": [
+                "corrupt memory on the CF",
+                "corrupt memory on the NCP30"
+            ],
+            "Sub-Code Description": ""
+        },
+        "0002": {
+            "Message": "MEMORY ERROR (JOB MNG DATA)",
+            "Location of Defect": "JOB MNG DATA",
+            "Signal of Defect": "",
+            "Cause": "The job files are damaged due to",
+            "Potential Causes": [
+                "corrupt memory on the CF",
+                "corrupt memory on the NCP30"
+            ],
+            "Sub-Code Description": ""
+        },
+        "0003": {
+            "Message": "MEMORY ERROR (JOB MNG DATA)",
+            "Location of Defect": "JOB MNG DATA",
+            "Signal of Defect": "",
+            "Cause": "The management data of position data files are damaged due to",
+            "Potential Causes": [
+                "corrupt memory on the CF",
+                "corrupt memory on the NCP30"
+            ],
+            "Sub-Code Description": ""
+        }
+    },
+    "0230": {
+        "0000": {
+            "Message": "MEMORY ERROR (LADDER PRG FILE)",
+            "Location of Defect": "LADDER PRG FILE",
+            "Signal of Defect": "",
+            "Cause": "The concurrent I/O ladder program is damaged due to",
+            "Potential Causes": [
+                "corrupt memory on the CF",
+                "corrupt memory on the NCP30"
+            ],
+            "Sub-Code Description": ""
+        }
+    },
+    "0270": {
+        "0000": {
+            "Message": "MEMORY ERROR (SYSTEM DATA FILE)",
+            "Location of Defect": "SYSTEM DATA FILE",
+            "Signal of Defect": "",
+            "Cause": "The system configuration data is damaged due to",
+            "Potential Causes": [
+                "corrupt memory on the CF",
+                "corrupt memory on the NCP30"
+            ],
+            "Sub-Code Description": ""
+        }
+    },
+    "0300": {
+        "0002": {
+            "Message": "VERIFY ERROR (SYSTEM CONFIGDATA)",
+            "Location of Defect": "SYSTEM CONFIGDATA",
+            "Signal of Defect": "",
+            "Cause": "The setting of concurrent I/O parameter is incorrect due to",
+            "Potential Causes": [
+                "corrupt memory on the CF",
+                "corrupt memory on the NCP30"
+            ],
+            "Sub-Code Description": ""
+        },
+        "0003": {
+            "Message": "VERIFY ERROR (SYSTEM CONFIGDATA)",
+            "Location of Defect": "SYSTEM CONFIGDATA",
+            "Signal of Defect": "",
+            "Cause": "An invalid value is set for the segment clock due to",
+            "Potential Causes": [
+                "corrupt memory on the CF",
+                "corrupt memory on the NCP30"
+            ],
+            "Sub-Code Description": ""
+        },
+        "0004": {
+            "Message": "VERIFY ERROR (SYSTEM CONFIGDATA)",
+            "Location of Defect": "SYSTEM CONFIGDATA",
+            "Signal of Defect": "",
+            "Cause": "Inconsistency was detected in axis related parameters due to",
+            "Potential Causes": [
+                "corrupt memory on the CF",
+                "corrupt memory on the NCP30"
+            ],
+            "Sub-Code Description": ""
+        },
+        "0008": {
+            "Message": "VERIFY ERROR (SYSTEM CONFIGDATA)",
+            "Location of Defect": "SYSTEM CONFIGDATA",
+            "Signal of Defect": "",
+            "Cause": "The function designation for the concurrent I/O parameter is incorrect due to",
+            "Potential Causes": [
+                "corrupt memory on the CF",
+                "corrupt memory on the NCP30"
+            ],
+            "Sub-Code Description": ""
+        }
+    },
+    "0310": {
+        "0000": {
+            "Message": "VERIFY ERROR (CMOS MEMORY SIZE)",
+            "Location of Defect": "CMOS MEMORY SIZE",
+            "Signal of Defect": "",
+            "Cause": "The CMOS memory capacity is different from its initial setting",
+            "Potential Causes": [],
+            "Sub-Code Description": ""
+        }
+    },
+    "0320": {
+        "0001": {
+            "Message": "VERIFY ERROR (I/O MODULE)",
+            "Location of Defect": "I/O MODULE",
+            "Signal of Defect": "",
+            "Cause": "The function of the connected I/O module is different from the set function",
+            "Potential Causes": [],
+            "Sub-Code Description": ""
+        }
+    },
+    "0330": {
+        "0000": {
+            "Message": "VERIFY ERROR (SENSOR FUNCTION)",
+            "Location of Defect": "SENSOR FUNCTION",
+            "Signal of Defect": "",
+            "Cause": "Inconsistency was detected in the application setting parameters",
+            "Potential Causes": [],
+            "Sub-Code Description": ""
+        }
+    },
+    "0400": {
+        "0032": {
+            "Message": "PARAMETER TRANSMISSION ERROR",
+            "Location of Defect": "",
+            "Signal of Defect": "",
+            "Cause": "An error occurred during the parameter/ file transfer to the AXC01 due to",
+            "Potential Causes": [
+                "Defective connection of communication cable for servopack",
+                "Defective connection of terminal connector",
+                "Defective circuit board",
+                "Corrupt memory on the CF"
+            ],
+            "Sub-Code Description": ""
+        }
+    },
+    "0410": {
+        "0032": {
+            "Message": "MODE CHANGE ERROR",
+            "Location of Defect": "",
+            "Signal of Defect": "",
+            "Cause": "An error occurred during startup sequence processing with the AXC01, and the system did not startup normally",
+            "Potential Causes": [],
+            "Sub-Code Description": ""
+        }
+    },
+}
