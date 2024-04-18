@@ -4786,12 +4786,54 @@ alarm_dict = {
         }
     }
 }
-# Load the Excel workbook at work
-# excel_path = r'G:\DATA\REPAIR\Semi-Conductor Section Info\Procedures & notes\Brian Shanders Notes\FORMS\Training Doc\RMA Failure History.xlsx'
-# Load the Excel workbook at work
-excel_path = r'/Users/jaredwoods/PycharmProjects/RMA Failure History.xlsx'
-data = pd.read_excel(excel_path, sheet_name='KLA Cont ')
+def load_data(excel_path):
+    # Replace 'KLA Cont ' with the actual sheet name you want to load
+    data = pd.read_excel(excel_path, sheet_name='KLA Cont ')
+    return data
 
+def on_select_environment():
+    # Get the selected environment from the combo box
+    environment = combo_box.get()
+
+    # Dictionary mapping environments to file paths
+    paths = {
+        "Work PC": r'G:\DATA\REPAIR\Semi-Conductor Section Info\Procedures & notes\Brian Shanders Notes\FORMS\Training Doc\RMA Failure History.xlsx',
+        "Home Mac": r'/Users/jaredwoods/PycharmProjects/RMA Failure History.xlsx',
+        "Home PC": r'C:\Users\Rockswell\1st directory\2nd Directory\RMA Failure History.xlsx'
+    }
+
+    # Check if the environment is selected and valid
+    if environment and environment in paths:
+        try:
+            # Load the Excel file based on the chosen environment
+            excel_path = paths[environment]
+            data = load_data(excel_path)
+            # Here you might want to pass the loaded data to your main application window
+            # For now, we'll just destroy the popup
+            popup.destroy()
+        except Exception as e:
+            messagebox.showerror("Error", f"Failed to load the Excel file: {str(e)}")
+    else:
+        messagebox.showwarning("Warning", "Please select an environment.")
+
+# Create a popup window for environment selection
+popup = tk.Tk()
+popup.title("Select Environment")
+
+# Label
+label = ttk.Label(popup, text="Select your environment:")
+label.pack(padx=10, pady=5)
+
+# Dropdown menu (Combobox)
+combo_box = ttk.Combobox(popup, values=["Work PC", "Home Mac", "Home PC"])
+combo_box.pack(padx=10, pady=5)
+
+# Confirm Button
+confirm_button = ttk.Button(popup, text="Confirm", command=on_select_environment)
+confirm_button.pack(padx=10, pady=5)
+
+# Run the popup window
+popup.mainloop()
 
 # noinspection PyUnusedLocal
 class AlarmAnalyzer:
