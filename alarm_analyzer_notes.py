@@ -7,7 +7,7 @@ import pandas as pd
 # Load the Excel workbook at work
 # excel_path = r'G:\DATA\REPAIR\Semi-Conductor Section Info\Procedures & notes\Brian Shanders Notes\FORMS\Training Doc\RMA Failure History.xlsx'
 # Load the Excel workbook at work
-excel_path = r'/Users/jaredwoods/PycharmProjects/RMA Failure History.xlsx'
+excel_path = '/Users/jaredwoods/PycharmProjects/RMA Failure History.xlsx'
 data = pd.read_excel(excel_path, sheet_name='KLA Cont ')
 
 
@@ -289,7 +289,6 @@ alarm_dict = {
 # noinspection PyUnusedLocal
 class AlarmAnalyzer:
     def __init__(self, master):
-        # Initialize instance variables
         self.subcode_description_text = None
         self.cause_text = None
         self.message_text = None
@@ -298,17 +297,18 @@ class AlarmAnalyzer:
         self.subcode_combo = None
         self.alarm_combo = None
         self.info_text = None
+        self.details_button = None
         self.master = master
         master.title("KLA Alarm Analyzer")
 
-        # Define fonts
         label_font = tkFont.Font(family="Arial", size=12)
-        entry_font = tkFont.Font(family="Courier New", size=10)
+        entry_font = tkFont.Font(family="Courier New", size=12)
 
         # Initialize UI components
         self.initialize_ui(label_font, entry_font)
 
     def initialize_ui(self, label_font, entry_font):
+        print("Initializing UI components")
         base64_image = ("iVBORw0KGgoAAAANSUhEUgAAAHgAAAAvCAYAAAAo7w6dAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcw"
                         "AADsMAAA7DAcdvqGQAAAZLSURBVHhe7Zt1iDVVGIc/A7EbC+xuxcLEQrEDbBQTxUIRxf5HEVGxFWzFQsVWUOxCRcXAAhW7"
                         "wA7s+D2788rP95u7e6+7qMO+DzzcuXNmZu89Z8573nPm7qSiKIqiKIqiKIqimEBM0bx2meXlBnIR+Ya8WP4ii44zj7xGfi"
@@ -335,14 +335,25 @@ class AlarmAnalyzer:
                         "8yj+RnQGwTug+URUc5TeYGDunRPictOgih2FeKkAUAFvPzQksxCv3+bPa/gMd7LM4TsnkYwYOO+qeyoiiKoiiKoiiKoiiK"
                         "icmkSX8CyETzCVcLsyAAAAAASUVORK5CYII=")
         image_data = base64.b64decode(base64_image)
-
-        # Create a PhotoImage object from the binary data
         image = PhotoImage(data=image_data)
-
-        # Create a label for the logo and place it on the grid
         logo_label = tk.Label(self.master, image=image)
         logo_label.image = image  # Keep a reference!
         logo_label.grid(row=0, column=0, rowspan=2, pady=(20, 0), sticky='sew')
+
+        ttk.Label(self.master, text="ALARM CODE", font=label_font, anchor="center", foreground="grey",
+                  width=12).grid(row=0, column=1, sticky="", padx=5, pady=5)
+        self.alarm_combo = ttk.Combobox(self.master, font=entry_font, width=7, height=25)
+        self.alarm_combo.grid(row=1, column=1, pady=0)
+        self.alarm_combo['values'] = list(alarm_dict.keys())  # Use real alarm codes here
+        self.alarm_combo.bind('<<ComboboxSelected>>', self.update_subcodes)
+
+        ttk.Label(self.master, text="TECH NOTES", font=label_font, anchor="center", foreground="grey").grid(row=0, column=3, padx=5, pady=5, sticky='nsew')
+        self.details_button = ttk.Button(self.master, text="Details", command=self.show_tech_notes, state='disabled')
+        self.details_button.grid(row=1, column=3, padx=5, pady=0, sticky='')
+        print("UI components initialized")
+
+        separator = ttk.Separator(self.master, orient='horizontal')
+        separator.grid(row=2, columnspan=4, sticky='ew', padx=5, pady=(10, 15))
 
         # Setup comboboxes for Alarm and Sub-Code
         self.setup_comboboxes(label_font, entry_font)
@@ -350,17 +361,29 @@ class AlarmAnalyzer:
         # Setup individual fields for Message, Location, Signal, and Cause
         self.setup_fields(label_font, entry_font)
 
+        # Create and configure styles
+        style = ttk.Style()
+        style.configure("TButton", font=entry_font, padding=6)
+        style.map("TButton",
+                  foreground=[('disabled', 'gray'), ('active', 'black')],
+                  background=[('disabled', 'lightgray'), ('active', 'green'), ('!disabled', 'lightgreen')])
+
+        # Use the styled button
+        self.details_button = ttk.Button(self.master, text="Details", command=self.show_tech_notes, style="TButton")
+        self.details_button.grid(row=1, column=3, padx=5, pady=0, sticky='')
+        self.details_button['state'] = 'disabled'  # Initialize button as disabled
+
     def setup_comboboxes(self, label_font, entry_font):
         style = ttk.Style()
         style.configure("Grey.TLabel", foreground="grey")
-
-        # Label and combobox for KLA Alarm
-        ttk.Label(self.master, text="ALARM CODE", font=label_font, style="Grey.TLabel", anchor="center",
-                  width=12).grid(row=0, column=1, sticky="", padx=5, pady=5)
-        self.alarm_combo = ttk.Combobox(self.master, font=entry_font, width=7, height=25)
-        self.alarm_combo.grid(row=1, column=1, pady=0)
-        self.alarm_combo['values'] = list(alarm_dict.keys())
-        self.alarm_combo.bind('<<ComboboxSelected>>', self.update_subcodes)
+        #
+        # # Label and combobox for KLA Alarm
+        # ttk.Label(self.master, text="ALARM CODE", font=label_font, style="Grey.TLabel", anchor="center",
+        #           width=12).grid(row=0, column=1, sticky="", padx=5, pady=5)
+        # self.alarm_combo = ttk.Combobox(self.master, font=entry_font, width=7, height=25)
+        # self.alarm_combo.grid(row=1, column=1, pady=0)
+        # self.alarm_combo['values'] = list(alarm_dict.keys())
+        # self.alarm_combo.bind('<<ComboboxSelected>>', self.update_subcodes)
 
         # Label and combobox for Sub-Code
         ttk.Label(self.master, text=" SUB-CODE", font=label_font, style="Grey.TLabel", width=10, anchor="center").grid(
@@ -368,14 +391,6 @@ class AlarmAnalyzer:
         self.subcode_combo = ttk.Combobox(self.master, font=entry_font, width=9)
         self.subcode_combo.grid(row=1, column=2, padx=5, pady=0)
         self.subcode_combo.bind('<<ComboboxSelected>>', self.display_info)
-
-        # Add label for tech notes
-        ttk.Label(self.master, text="TECH NOTES", font=label_font, anchor="center", foreground="grey").grid(row=0, column=3, padx=5, pady=5, sticky='nsew')
-        # Add button (placeholder function)
-        ttk.Button(self.master, text="Details", command=self.show_tech_notes).grid(row=1, column=3, padx=5, pady=0, sticky='')
-
-        separator = ttk.Separator(self.master, orient='horizontal')
-        separator.grid(row=2, columnspan=4, sticky='ew', padx=5, pady=(10, 15))
 
     def setup_fields(self, label_font, entry_font):
         # Sub-Code Description
@@ -409,10 +424,12 @@ class AlarmAnalyzer:
         self.info_text.grid(row=10, column=1, columnspan=3, padx=(0, 10), pady=(0, 10), sticky='EW')
 
     def update_subcodes(self, event):
-        # Update sub-codes based on the selected alarm code
+        print("Alarm code selected:", self.alarm_combo.get())
         alarm_code = self.alarm_combo.get()
         sub_codes = list(alarm_dict[alarm_code].keys())
         self.subcode_combo['values'] = sub_codes
+        print("Sub-codes updated:", sub_codes)
+
         if sub_codes:
             self.subcode_combo.set(sub_codes[0])
             self.display_info(None)
@@ -420,8 +437,16 @@ class AlarmAnalyzer:
             self.subcode_combo.set('')
             self.info_text.delete(1.0, tk.END)
 
+        # Enable or disable the details button based on the availability of tech notes
+        if alarm_code and self.check_tech_notes(alarm_code):
+            self.details_button['state'] = 'normal'
+            print("Details button enabled")
+        else:
+            self.details_button['state'] = 'disabled'
+            print("Details button disabled")
+
     def display_info(self, event):
-        # Display information related to the selected sub-code
+        print("Displaying information for sub-code:", self.subcode_combo.get())
         sub_code = self.subcode_combo.get()
         if not sub_code:
             return
@@ -443,7 +468,28 @@ class AlarmAnalyzer:
             causes += "\n".join(f"• {cause}" for cause in potential_causes)
         self.info_text.insert(tk.END, causes)
 
+    def check_tech_notes(self, alarm_code):
+        print("Checking tech notes for alarm code:", alarm_code)
+        # Ensure the DataFrame and columns exist
+        if 'Error Code 1' not in data.columns or 'Error Code 2' not in data.columns or 'Error Code 3' not in data.columns:
+            print("Required columns are missing from the data.")
+            return False
+
+        # Convert error codes in the DataFrame to strings and strip whitespace
+        data['Error Code 1'] = data['Error Code 1'].astype(str).str.strip()
+        data['Error Code 2'] = data['Error Code 2'].astype(str).str.strip()
+        data['Error Code 3'] = data['Error Code 3'].astype(str).str.strip()
+
+        # Check if there are any matching records for the given alarm code
+        has_records = not data[(data['Error Code 1'] == alarm_code) |
+                               (data['Error Code 2'] == alarm_code) |
+                               (data['Error Code 3'] == alarm_code)].empty
+
+        print("Records found:", has_records)
+        return has_records
+
     def show_tech_notes(self):
+        print("Showing tech notes for alarm code:", self.alarm_combo.get())
         alarm_code = self.alarm_combo.get()
         if not alarm_code:
             messagebox.showerror("Error", "No alarm code selected. Please select an alarm code.")
